@@ -1,21 +1,24 @@
 # Domain-Driven Design Cards
 
-Donwload der Domain-Driven Design Cards durch Zip-Download oder klonen des Repository.
+Donwload as zip-file or clone the repository.
 
-## Domain-Driven Design mit Gamification enabeln
+## Enable Domain-Driven Design with Gamification
 
-Mit Domain-Driven Design Cards bieten wir eine methodischer Unterstützung für unterschiedliche Workshop für strategisches und taktisches Domain-Driven Design kostenlos an.
-Domain-Driven Design Cards ist ein gemeinschaftliches Projekt mit [nilsbert](https://github.com/nilsbert). 
-Weitere Information zu Domain-Driven Design und Domain-Driven Design Cards findet ihr auf meiner [Website](www.architecture-enablers.de).
+Domain-Driven Design Cards offer valuable methodological support for a range of strategic and 
+tactical Domain-Driven Design workshops, and they're available for free. This initiative is a collaborative 
+project with [nilsbert](https://github.com/nilsbert). For additional details on Domain-Driven Design and Domain-Driven Design Cards, 
+you can explore my [website](www.architecture-enablers.de).
 
-Mit Domain-Driven Design Cards lassen sich das Context Mapping Game, das Bounded Context Game und das Architecture Game spielen. Einen Überblick wie das genau geht, geben folgende Abschnitte.
+With Domain-Driven Design Cards, you can engage in activities such as the Context Mapping Game, 
+the Bounded Context Game, and the Architecture Game. If you're looking for a comprehensive guide 
+on how to use them, please consult the following sections.
 
 ## Bounded Context Game
 
 ## Context Mapping Game
 
-### Übersicht Kartendeck
+### Overview Card Deck
 
-![Übersicht Kartendeck Context Mapping Game](./cards/Context_Mapping_Game_Cards_Overview.png)
+![Overview Card Deck Context Mapping Game](./cards/Context_Mapping_Game_Cards_Overview.png)
 
 ## Architecture Game
