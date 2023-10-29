@@ -1,5 +1,7 @@
 # Domain-Driven Design Cards
 
+Donwload der Domain-Driven Design Cards durch Zip-Download oder klonen des Repository.
+
 ## Domain-Driven Design mit Gamification enabeln
 
 Mit Domain-Driven Design Cards bieten wir eine methodischer Unterstützung für unterschiedliche Workshop für strategisches und taktisches Domain-Driven Design kostenlos an.
