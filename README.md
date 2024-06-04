@@ -38,7 +38,7 @@ Determine the strategic importance of your subdomains and bounded contexts.
 
 ## Tactical Architecture Game
 
-Discover the architectural vision within the development team.
+Discover the tactical architectural plan collaboratively within the development team.
 
 ### Overview Card Deck
 
