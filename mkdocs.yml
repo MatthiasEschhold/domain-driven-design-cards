@@ -51,7 +51,8 @@ plugins:
 
 nav:
   - Home: 'README.md'
-  - Enable DDD mit Gamification: 'mkdocs.md'
+  - Intro: 'index.md'
+  - Enable DDD mit Gamification: 'docs/mkdocs.md'
   - Bounded Context Game: 'docs/bcg/bcg-gameplay.md'
   - Strategic Classification Game: 'docs/scg/scg-gameplay.md'
   - Context Mapping Game: 'docs/cmg/cmg-gameplay.md'
