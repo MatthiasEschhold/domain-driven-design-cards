@@ -1,0 +1,1130 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/tag/tag-overview/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>Architecture Enabling mittels kollaborativen Architekturentscheidungen - domain-driven-design-cards</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#enabling-architecture-decisions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="domain-driven-design-cards" class="md-header__button md-logo" aria-label="domain-driven-design-cards" data-md-component="logo">
+      
+  <img src="../../img/arkem-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            domain-driven-design-cards
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Architecture Enabling mittels kollaborativen Architekturentscheidungen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    domain-driven-design-cards
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="domain-driven-design-cards" class="md-nav__button md-logo" aria-label="domain-driven-design-cards" data-md-component="logo">
+      
+  <img src="../../img/arkem-white.png" alt="logo">
+
+    </a>
+    domain-driven-design-cards
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    domain-driven-design-cards
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mkdocs.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enable DDD mit Gamification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bcg/bcg-gameplay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bounded Context Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scg/scg-gameplay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategic Classification Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cmg/cmg-gameplay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context Mapping Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tag-gameplay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tactical Architecture Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-architecture-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling Architecture Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enabling Architecture Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entscheidungskategorie-modularisierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entscheidungskategorie Modularisierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entscheidungskategorie Modularisierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ead-1-wie-werden-fachliche-module-strukturiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 1: Wie werden fachliche Module strukturiert?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 1: Wie werden fachliche Module strukturiert?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-2-wie-wird-die-abhangigkeit-zwischen-zwei-aggregates-behandelt" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 2: Wie wird die Abhängigkeit zwischen zwei Aggregates behandelt?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 2: Wie wird die Abhängigkeit zwischen zwei Aggregates behandelt?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entscheidungskategorie-domanenkern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entscheidungskategorie Domänenkern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entscheidungskategorie Domänenkern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ead-3-nach-welchem-prinzip-wird-das-domanenmodell-implementiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 3: Nach welchem Prinzip wird das Domänenmodell implementiert?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 3: Nach welchem Prinzip wird das Domänenmodell implementiert?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-4-wie-soll-das-value-object-muster-in-der-implementierung-angewendet-werden" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 4: Wie soll das Value Object Muster in der Implementierung angewendet werden?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 4: Wie soll das Value Object Muster in der Implementierung angewendet werden?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-5-wie-soll-das-value-object-muster-implementiert-werden" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 5: Wie soll das Value Object Muster implementiert werden?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 5: Wie soll das Value Object Muster implementiert werden?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vorbedingung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vorbedingung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-6-wie-wird-die-fachliche-konsistenz-bei-verwendung-des-anemic-domain-model-gesichert" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 6: Wie wird die fachliche Konsistenz bei Verwendung des Anemic Domain Model gesichert?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 6: Wie wird die fachliche Konsistenz bei Verwendung des Anemic Domain Model gesichert?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vorbedingung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vorbedingung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-7-wie-wird-validierung-implementiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 7: Wie wird Validierung implementiert?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 7: Wie wird Validierung implementiert?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-8-welche-strategie-der-objekterzeugung-wird-fur-komplexe-fachobjekte-verwendet" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 8: Welche Strategie der Objekterzeugung, wird für komplexe Fachobjekte verwendet?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 8: Welche Strategie der Objekterzeugung, wird für komplexe Fachobjekte verwendet?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entscheidungskategorie-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entscheidungskategorie Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entscheidungskategorie Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ead-9-wie-werden-use-cases-geschnitten" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 9: Wie werden Use Cases geschnitten?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lösungsstrategien">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-10-welche-mapping-strategie-wird-als-default-strategie-verwendet-und-fur-welche-szenarien-eignen-sich-alternative-strategien" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 10: Welche Mapping-Strategie wird als Default-Strategie verwendet und für welche Szenarien eignen sich alternative Strategien?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 10: Welche Mapping-Strategie wird als Default-Strategie verwendet und für welche Szenarien eignen sich alternative Strategien?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entscheidungskategorie-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entscheidungskategorie Mappings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entscheidungskategorie Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ead-11-wie-werden-mappings-implementiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 11: Wie werden Mappings implementiert?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 11: Wie werden Mappings implementiert?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ead-12-wie-werden-mappings-implementiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      EAD 12: Wie werden Mappings implementiert?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EAD 12: Wie werden Mappings implementiert?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losungsstrategien_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lösungsstrategien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko, wenn die Entscheidung nicht bewusst getroffen wird
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Tags -->
+
+
+<!-- Actions -->
+
+  
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/tag/tag-overview.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/tag/tag-overview.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<!--
+  Check whether the content starts with a level 1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+
+<!---->
+<!--<h1>Architecture Enabling mittels kollaborativen Architekturentscheidungen</h1>-->
+<!---->
+
+<!-- Page content -->
+<h1 id="architecture-enabling-mittels-kollaborativen-architekturentscheidungen">Architecture Enabling mittels kollaborativen Architekturentscheidungen<a class="headerlink" href="#architecture-enabling-mittels-kollaborativen-architekturentscheidungen" title="Permanent link">⚓︎</a></h1>
+<p>Das Tactical Architecture Game ist ein Gamification-Ansatz, um den taktischen Architekturplan im Entwicklungsteam zu entwickeln.
+Das Spiel basiert auf sogenannte Enabler Architecture Decisions. Die Summe aller Entscheidungen ergibt den Architekturplan.</p>
+<p>Das Tactical Architecture Game, wie hier beschrieben, ist für das taktische Domain-Driven Design in Kombination mit
+domänen-zentrischen Architekturmustern, wie z.B. Clean, Hexagonal oder Onion Architecture, konzipiert.</p>
+<p>Die Enabler Architecture Decisions erstrecken sich über die folgenden Kategorien:</p>
+<ol>
+<li>Modularisierung</li>
+<li>Use Cases</li>
+<li>Domänenkern</li>
+<li>Mappings</li>
+</ol>
+<p>Jede Kategorie enthält in der Regel mehrere Entscheidungen. Die Summe der Entscheidungen beschreiben die Umsetzungsvision der Architektur.</p>
+<p>Im Weiteren die Begriffe, die die Grundidee des Tactical Architecture Game in verallgemeinerter Form beschreiben:</p>
+<blockquote>
+<p>Enabler Architecture Decision
+Architekturentscheidung für die Umsetzung eines umfangreichen Architekturkonzeptes, wobei die Entscheidung eine bestimmte Lösungsstrategie für einen Teilbereich des Architekturkonzepts darstellt.</p>
+<p>Architekturkonzept
+Muster und -prinzipien der taktischen Architekturebene, gebündelt und benannt als Architekturkonzept mit dem Charakter einer Basisstrukturierung durch Ringe, Schichten, Komponenten, Module und Klassen.</p>
+<p>Dabei wird das Architekturkonzept i.d.R. durch mehrere Entscheidungen ausgedrückt. Die Summe von
+Enabler Architecture Decisions stellt die Umsetzungsvision der Architektur des Teams dar.</p>
+</blockquote>
+<h2 id="enabling-architecture-decisions">Enabling Architecture Decisions<a class="headerlink" href="#enabling-architecture-decisions" title="Permanent link">⚓︎</a></h2>
+<h3 id="entscheidungskategorie-modularisierung">Entscheidungskategorie Modularisierung<a class="headerlink" href="#entscheidungskategorie-modularisierung" title="Permanent link">⚓︎</a></h3>
+<p>Enabler Architecture Decisions der Entscheidungskategorie Modularisierung haben übergreifenden Charakter und gelten in allen domänenzentrischen Architekturmuster auf gleiche Weise.</p>
+<h4 id="ead-1-wie-werden-fachliche-module-strukturiert">EAD 1: Wie werden fachliche Module strukturiert?<a class="headerlink" href="#ead-1-wie-werden-fachliche-module-strukturiert" title="Permanent link">⚓︎</a></h4>
+<p>Das fachliche Modul bildet sich um ein Aggregate. Innerhalb dieses Moduls werden die Ringe des Clean Architecture Pattern abgebildet. Hierfür gibt es verschiedene Lösungsstrategien.</p>
+<h6 id="losungsstrategien">Lösungsstrategien<a class="headerlink" href="#losungsstrategien" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Architektonisch ausdrucksstark</li>
+<li>Architektonisch ausdrucksstark in der fachlichen Applikation</li>
+<li>Ringe als Schichten</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-2-wie-wird-die-abhangigkeit-zwischen-zwei-aggregates-behandelt">EAD 2: Wie wird die Abhängigkeit zwischen zwei Aggregates behandelt?<a class="headerlink" href="#ead-2-wie-wird-die-abhangigkeit-zwischen-zwei-aggregates-behandelt" title="Permanent link">⚓︎</a></h4>
+<p>Im taktischen Domain-Driven Design wird eine Entkopplung auf Basis der Grenzen von Aggregates verfolgt. Aggregates haben einen unabhängigen Lebenszyklus. Falls jedoch ein fachlicher Zusammenhang besteht, darf ein Aggregate ein anderes Aggregate nur über die Identität referenzieren. Die Referenz muss zur Laufzeit aufgelöst werden [7]. Es empfiehlt sich, Abhängigkeiten dieser Art einheitlich zu behandeln, solange besondere Anforderungen keine Ausnahme bedingen. Welches Muster als Standard dienen kann und in welchen Szenarien auf alternative Lösungsstrategien zurückgegriffen wird, sollte durch eine aktive Entscheidung im Entwicklungsteam festgelegt werden.</p>
+<h6 id="losungsstrategien_1">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_1" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Application Service Pattern</li>
+<li>Adapter Out Use Case In Pattern</li>
+<li>Event-driven / Publish-Subscribe Pattern</li>
+</ol>
+<h4 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_1">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_1" title="Permanent link">⚓︎</a></h4>
+<h3 id="entscheidungskategorie-domanenkern">Entscheidungskategorie Domänenkern<a class="headerlink" href="#entscheidungskategorie-domanenkern" title="Permanent link">⚓︎</a></h3>
+<p>Entscheidungen der Kategorie Domänenkern beziehen sich auf den Entities-Ring der Clean Architecture.</p>
+<h4 id="ead-3-nach-welchem-prinzip-wird-das-domanenmodell-implementiert">EAD 3: Nach welchem Prinzip wird das Domänenmodell implementiert?<a class="headerlink" href="#ead-3-nach-welchem-prinzip-wird-das-domanenmodell-implementiert" title="Permanent link">⚓︎</a></h4>
+<p>Diese Entscheidung legt grundlegend fest, wie das Domänenmodell implementiert wird und an welchen Stellen Geschäftslogik und -regeln umgesetzt werden. Dabei wird zwischen der Variante des Rich Domain Models und des Anemic Domain Models unterschieden.</p>
+<p>Das Rich Domain Model besagt, dass die Fachlogik im Domänenobjekt implementiert wird. Dadurch wird eine ausdrucksstarke Benennung der Methoden ermöglicht, die auf der Fachlichkeit basiert, im Vergleich zu einfachen set- und get-Methoden. Zudem erlaubt es die fachliche Validierung zur Sicherung der Konsistenz einer (Root) Entity ebenfalls direkt am Objekt vorzunehmen. Gleiches gilt für Value Objects, die die Validierung des fachlichen Werts implementieren.</p>
+<p>Ein Anemic Domain Model enthält nur die Eigenschaften sowie dazugehörige getter und setter. Fachlogik und Validierung werden ausschließlich in Domain Services implementiert. Das Anemic Domain Model gilt als Anti-Pattern, da dies oft zu einem Verlust der Fachsprache sowie zu Konsistenzverletzungen führt [9]. Dennoch muss ein Team diese Entscheidung bewusst treffen.</p>
+<h6 id="losungsstrategien_2">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_2" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Rich Domain Model</li>
+<li>Anemic Domain Model</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_2">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_2" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-4-wie-soll-das-value-object-muster-in-der-implementierung-angewendet-werden">EAD 4: Wie soll das Value Object Muster in der Implementierung angewendet werden?<a class="headerlink" href="#ead-4-wie-soll-das-value-object-muster-in-der-implementierung-angewendet-werden" title="Permanent link">⚓︎</a></h4>
+<p>Wird dem Rich Domain Model gefolgt, entsteht in Teams regelmäßig die Frage, ob jeder Fachwert als Value Object implementiert werden muss. Denn in komplexen Aggregates können potenziell zahlreiche Value Objects entstehen. Die Empfehlung ist fachliche Werte immer als Value Objects zu implementieren, um die Fachlichkeit zu stärken und die Robustheit zu erhöhen. Ausnahmen können gemacht werden, wenn fachliche Werte nicht validiert werden müssen oder wenn fachliche Werte Elemente eines verschachtelten Value Objects darstellen. Auf Value Objects zu verzichten und primitive Datentypen für fachliche Werte zu verwenden, ist ebenfalls eine Möglichkeit, wird jedoch als Anti-Pattern bewertet ([7] und [9]).</p>
+<h6 id="losungsstrategien_3">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_3" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Jeder fachliche Wert wird als Value Object implementiert</li>
+<li>Nur fachliche Werte, die Verhalten und/oder Validierung bedingen, werden als Value Object implementiert</li>
+<li>Jeder fachliche Wert wird mittels primitiven Datentyp implementiert</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_3">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_3" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-5-wie-soll-das-value-object-muster-implementiert-werden">EAD 5: Wie soll das Value Object Muster implementiert werden?<a class="headerlink" href="#ead-5-wie-soll-das-value-object-muster-implementiert-werden" title="Permanent link">⚓︎</a></h4>
+<h6 id="vorbedingung">Vorbedingung<a class="headerlink" href="#vorbedingung" title="Permanent link">⚓︎</a></h6>
+<p>Entscheidung für das Rich Domain Model sowie für die Anwendung des Value Object Muster.</p>
+<h6 id="losungsstrategien_4">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_4" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Jeder fachliche Wert wird als Value Object implementiert</li>
+<li>Nur fachliche Werte, die Verhalten und/oder Validierung bedingen, werden als Value Object implementiert</li>
+<li>Jeder fachliche Wert wird mittels primitiven Datentyp implementiert</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_4">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_4" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-6-wie-wird-die-fachliche-konsistenz-bei-verwendung-des-anemic-domain-model-gesichert">EAD 6: Wie wird die fachliche Konsistenz bei Verwendung des Anemic Domain Model gesichert?<a class="headerlink" href="#ead-6-wie-wird-die-fachliche-konsistenz-bei-verwendung-des-anemic-domain-model-gesichert" title="Permanent link">⚓︎</a></h4>
+<p>Wird das Anemic Domain Model verwendet, muss für die Validierungslogik ein anderes Element als die Fachobjekte selbst gefunden werden. Eine Möglichkeit hierfür ist der Domain Service, jedoch würde dies dazu führen, dass die Verantwortung für Fachlogik und fachliche Validierung in einem Muster verortet wird. Bei erhöhter fachlicher Komplexität empfiehlt sich daher die Einführung eines neuen Elements in der Mustersprache, wie z.B. ein Validator.</p>
+<h6 id="vorbedingung_1">Vorbedingung<a class="headerlink" href="#vorbedingung_1" title="Permanent link">⚓︎</a></h6>
+<p>Entscheidung für das Anemic Domain Model</p>
+<h6 id="losungsstrategien_5">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_5" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Validierungslogik im Domain Services</li>
+<li>Eigenes Element in der Mustersprache, zugehörig zum Domänenkern</li>
+</ol>
+<h4 id="ead-7-wie-wird-validierung-implementiert">EAD 7: Wie wird Validierung implementiert?<a class="headerlink" href="#ead-7-wie-wird-validierung-implementiert" title="Permanent link">⚓︎</a></h4>
+<p>Unabhängig davon, an welcher Stelle die Validierung in der Mustersprache verortet ist, benötigt das Entwicklungsteam eine gemeinsame Vorstellung davon, wie die Validierung implementiert werden soll. Die Möglichkeiten reichen von der nativen Implementierung in der verwendeten Programmiersprache über selbst erstellte Abstraktionen bis hin zum Einsatz von Drittanbieter-Bibliotheken. Der Lösungsraum ist vielfältig.</p>
+<h6 id="losungsstrategien_6">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_6" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Native Implementierung ohne Abstraktion</li>
+<li>Native Implementierung mit Abstraktion</li>
+<li>Drittanbieter-Bibliotheken</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_5">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_5" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-8-welche-strategie-der-objekterzeugung-wird-fur-komplexe-fachobjekte-verwendet">EAD 8: Welche Strategie der Objekterzeugung, wird für komplexe Fachobjekte verwendet?<a class="headerlink" href="#ead-8-welche-strategie-der-objekterzeugung-wird-fur-komplexe-fachobjekte-verwendet" title="Permanent link">⚓︎</a></h4>
+<p>Eine Root-Entity, eine Entity oder ein Value Object muss stets einen gültigen fachlichen Zustand sicherstellen. Die Erzeugung der Fachobjekte spielt dabei eine entscheidende Rolle. Die Mustersprache des taktischen Designs beschreibt die Factory, die die Verantwortung für die Objekterzeugung übernimmt, wenn dies nicht mehr durch einen einfachen Konstruktor möglich ist. Als Alternative zur Factory kann das Builder-Pattern verwendet werden und Static Factory Methoden sind eine gute Alternative oder Ergänzung zu Konstruktoren.</p>
+<p>In der Regel gibt es nicht den einen Erzeugungsprozess für eine (Root) Entity. Folglich ist die Kombination der Lösungsstrategien für jeweilige passende Einsatzszenarien ein erfolgsversprechender Weg. Eine willkürliche und im schlimmsten Fall widersprüchliche Verwendung der Lösungsstrategien, erhöht die strukturelle Komplexität der Architektur. Daher wird ein aktiver Umgang mit dieser Fragestellung empfohlen.</p>
+<h6 id="losungsstrategien_7">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_7" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Factory</li>
+<li>Static Method Factory</li>
+<li>Konstruktor</li>
+<li>Builder
+      Enabler Architecture Decisions der Kategorie Anwendungsfälle der Domäne
+      Die Entscheidungskategorie Anwendungsfälle der Domäne bezieht sich auf den Use Cases Ring der Clean Architecture.</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_6">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_6" title="Permanent link">⚓︎</a></h6>
+<h3 id="entscheidungskategorie-use-cases">Entscheidungskategorie Use Cases<a class="headerlink" href="#entscheidungskategorie-use-cases" title="Permanent link">⚓︎</a></h3>
+<h4 id="ead-9-wie-werden-use-cases-geschnitten">EAD 9: Wie werden Use Cases geschnitten?<a class="headerlink" href="#ead-9-wie-werden-use-cases-geschnitten" title="Permanent link">⚓︎</a></h4>
+<p>Use Cases sind Schnittstellen der fachlichen Applikation und werden aus der Perspektive der Domäne definiert. Dabei können verschiedene Heuristiken zum Einsatz kommen, und keine Heuristik ist per se die beste [6]. Entscheidend ist vielmehr ein gemeinsames Verständnis und die einheitliche Anwendung, die jeweils von konkreten Anwendungsfällen abhängt.</p>
+<h4 id="losungsstrategien_8">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_8" title="Permanent link">⚓︎</a></h4>
+<ol>
+<li>Use Case je Funktion</li>
+<li>Use Case für alle Command-Operationen</li>
+<li>Use Case für alle Query-Operationen</li>
+<li>Use Case für alle Schnittstellen bezogen auf eine (Root) Entity</li>
+<li>Use Case für alle Schnittstelle zu einer technischen Komponenten (z.B. Datenbank) innerhalb einer fachlichen Modulgrenze
+      Enabler Architecture Decisions der Kategorie Mappings
+      Entscheidungen über Mapping-Strategien sind in der Clean Architecture auf den Interface Adapters Ring bzw. bei der der Full Mapping Strategie ebenfalls auf den Use Cases Ring bezogen.</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_7">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_7" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-10-welche-mapping-strategie-wird-als-default-strategie-verwendet-und-fur-welche-szenarien-eignen-sich-alternative-strategien">EAD 10: Welche Mapping-Strategie wird als Default-Strategie verwendet und für welche Szenarien eignen sich alternative Strategien?<a class="headerlink" href="#ead-10-welche-mapping-strategie-wird-als-default-strategie-verwendet-und-fur-welche-szenarien-eignen-sich-alternative-strategien" title="Permanent link">⚓︎</a></h4>
+<p>Diese Entscheidung wurde bereits bei der Beschreibung der Clean Architecture erläutert.</p>
+<h6 id="losungsstrategien_9">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_9" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>One-Mapping</li>
+<li>Two-Way Mapping</li>
+<li>Full Mapping</li>
+<li>No Mapping</li>
+</ol>
+<h4 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_8">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_8" title="Permanent link">⚓︎</a></h4>
+<h3 id="entscheidungskategorie-mappings">Entscheidungskategorie Mappings<a class="headerlink" href="#entscheidungskategorie-mappings" title="Permanent link">⚓︎</a></h3>
+<h4 id="ead-11-wie-werden-mappings-implementiert">EAD 11: Wie werden Mappings implementiert?<a class="headerlink" href="#ead-11-wie-werden-mappings-implementiert" title="Permanent link">⚓︎</a></h4>
+<p>Für die Two-Way und die Full Mapping Strategie stellt sich die Frage, wie Mappings implementiert werden sollen. Eine einheitliche Lösungsstrategie wird empfohlen, um die Komplexität in der Implementierung nicht unnötig zu erhöhen. Jede Strategie hat Vor- und Nachteile, und letztendlich muss sie auch den Vorlieben des Teams entsprechen. Daher wird empfohlen diese Entscheidung bewusst im Team zu treffen.</p>
+<h6 id="losungsstrategien_10">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_10" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Native Implementierung durch einen eigenes Element in der Mustersprache (z.B. Mapper)</li>
+<li>Native Implementierung als Logik des Interface Adapters</li>
+<li>Implementierung durch ein eigenes Element in der Mustersprache sowie mit Verwendung von Drittanbieter-Bibliotheken
+      Gamification als Enabler für taktische Softwarearchitektur
+      Das Tactical Architecture Game setzt die Ideen des Bounded Context, des Context Mapping sowie des Strategic Classification Game fort. Aus Sicht des Softwareentwicklungsprozesses ist dies eine weitere Iteration, die intensive Architekturarbeit beinhaltet und den Übergang von der strategischen zur taktischen Architektur sowie zur Implementierung darstellt. Das AMET führt den roten Faden der iterativen Architekturentwicklung fort, moderiert das Spiel und unterstützt durch Expertenwissen und Erfahrung. Das Tactical Architecture Game leitet den Abschluss der initialen "Slow Down"- und der Enabling-Phase ein. Vorbedingungen für das Tactical Architecture Game ist, dass das Team die Reife zu treffen der gemeinschaftliche Architekturentscheidungen durch das entsprechende Hintergrundwissen hat. Die Vorbedingung für das Tactical Architecture Game ist, dass das Team über die entsprechende Reife durch eine fundierte Wissensbasis verfügt, um gemeinschaftliche Architekturentscheidungen zu treffen.
+      Spielanleitung des Tactical Architecture Game</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_9">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_9" title="Permanent link">⚓︎</a></h6>
+<h4 id="ead-12-wie-werden-mappings-implementiert">EAD 12: Wie werden Mappings implementiert?<a class="headerlink" href="#ead-12-wie-werden-mappings-implementiert" title="Permanent link">⚓︎</a></h4>
+<p>Für die Two-Way und die Full Mapping Strategie stellt sich die Frage, wie Mappings implementiert werden sollen. Eine einheitliche Lösungsstrategie wird empfohlen, um die Komplexität in der Implementierung nicht unnötig zu erhöhen. Jede Strategie hat Vor- und Nachteile, und letztendlich muss sie auch den Vorlieben des Teams entsprechen. Daher wird empfohlen diese Entscheidung im Team zu treffen.</p>
+<h6 id="losungsstrategien_11">Lösungsstrategien<a class="headerlink" href="#losungsstrategien_11" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>Native Implementierung durch einen eigenes Element in der Mustersprache (z.B. Mapper)</li>
+<li>Native Implementierung als Logik des Interface Adapters</li>
+<li>Implementierung durch ein eigenes Element in der Mustersprache sowie mit Verwendung von Drittanbieter-Bibliotheken</li>
+</ol>
+<h6 id="risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_10">Risiko, wenn die Entscheidung nicht bewusst getroffen wird<a class="headerlink" href="#risiko-wenn-die-entscheidung-nicht-bewusst-getroffen-wird_10" title="Permanent link">⚓︎</a></h6>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+
+
+
+<!-- Comment system -->
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.footer", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
