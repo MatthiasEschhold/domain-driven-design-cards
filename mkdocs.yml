@@ -1,0 +1,58 @@
+---
+site_name: domain-driven-design-cards
+site_url: https://github.com/MatthiasEschhold/domain-driven-design-cards
+repo_url: https://github.com/MatthiasEschhold/domain-driven-design-cards.git
+repo_name: domain-driven-design-cards
+edit_uri: domain-driven-design-cards/docs/
+
+extra_css:
+  - css/custom.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - footnotes
+  - attr_list
+  - toc:
+      toc_depth: 2-6
+      permalink: ⚓︎
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+theme:
+  name: material
+  docs_dir: docs
+  custom_dir: docs/overrides
+  logo: docs/img/arkem-white.png
+  favicon: docs/img/logo.png
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+
+plugins:
+  - search
+
+nav:
+  - Home: 'README.md'
+  - Enable DDD mit Gamification: 'mkdocs.md'
+  - Bounded Context Game: 'docs/bcg/bcg-gameplay.md'
+  - Strategic Classification Game: 'docs/scg/scg-gameplay.md'
+  - Context Mapping Game: 'docs/cmg/cmg-gameplay.md'
+  - Tactical Architecture Game: 'docs/tag/tag-gameplay.md'
