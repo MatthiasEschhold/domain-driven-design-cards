@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../img/logo.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
@@ -136,7 +136,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -383,6 +383,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Ziel des Spiels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      Die Mission
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -441,6 +456,21 @@
       Ziel des Spiels
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Ziel des Spiels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      Die Mission
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -502,7 +532,7 @@
 <!-- Actions -->
 
   
-    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/tag/tag-gameplay.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/edit/master/docs/docs/tag/tag-gameplay.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -511,7 +541,7 @@
     
       
     
-    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/tag/tag-gameplay.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/raw/master/docs/docs/tag/tag-gameplay.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
@@ -529,40 +559,50 @@
 
 <!-- Page content -->
 <h1 id="das-tactical-architecture-game">Das Tactical Architecture Game<a class="headerlink" href="#das-tactical-architecture-game" title="Permanent link">⚓︎</a></h1>
-<p>Das Tactical Architecture Game hat das Ziel, grundlegende Architekturentscheidungen zu diskutieren und eine Teamentscheidung
-im Konsent für jede relevante Fragestellung zu finden. Hierfür stellt das Spiel ein Set an Enabler Architecture Decisions,
-eingeteilt in Kategorien, bereit.</p>
 <h2 id="ziel-des-spiels">Ziel des Spiels<a class="headerlink" href="#ziel-des-spiels" title="Permanent link">⚓︎</a></h2>
-<p>Jede Entscheidungskategorie stellt eine zu erfüllende Mission des Teams dar, die durch die Beantwortung mindestens einer 
-oder mehrerer Architekturentscheidungen abgeschlossen wird. Sind alle Missionen erfüllt, ist das Spiel zu Ende. 
-Das Tactical Architecture Game kann mit dem Wirkungsbereich bezogen auf einen Bounded Context, ein Entwicklungsteam 
-oder auch eine Gruppe von Entwicklungsteams, die über einen Systemverbund eine gleichartige taktische Architektur 
-erreichen möchten, angewendet werden.</p>
+<p>Das Tactical Architecture Game hat das Ziel grundlegende Architekturentscheidungen zu diskutieren und eine Teamentscheidung
+im Konsent für jede relevante Fragestellung zu finden. Hierfür stellt das Spiel ein Set an Entscheidungen 
+(Enabler Architecture Decisions), eingeteilt in Entscheidungskategorien, bereit.</p>
+<p>Das Tactical Architecture Game kann mit dem Wirkungsbereich bezogen auf einen Bounded Context, ein Entwicklungsteam
+oder auch eine Gruppe von Entwicklungsteams, die über einen Systemverbund eine gleichartige taktische Architektur
+erreichen möchten, angewendet werden. Das Spiel adressiert taktischen Domain-Driven Design und domänen-zentrische Architekturmuster, 
+wie z.B. die Clean Architecture, Hexagonal Architecture oder Onion Architecture.</p>
+<h3 id="die-mission">Die Mission<a class="headerlink" href="#die-mission" title="Permanent link">⚓︎</a></h3>
+<p>Jede Entscheidungskategorie stellt eine zu erfüllende Mission des Teams dar, die durch das Finden einer 
+oder mehrerer Architekturentscheidungen abgeschlossen wird. Sind alle Missionen erfüllt, ist das Spiel zu Ende.</p>
 <h2 id="spielvorbereitung">Spielvorbereitung<a class="headerlink" href="#spielvorbereitung" title="Permanent link">⚓︎</a></h2>
 <p>Zur Spielvorbereitung gehört die Vorbereitung des Spielfelds in physischer oder digitaler Form. 
 Der Wirkungsbereich ist im Vorfeld zu klären und auf dem Spielfeld zu dokumentieren.</p>
 <p>Das Spielfeld enthält Entscheidungskategorien und die Fragestellungen für eine zu treffende Entscheidung. 
-Die Spielkarten beschreiben zum einen die Fragestellung sowie passende Muster und Lösungsstrategien. 
-Sie geben Richtung vor und rufen zuvor aufgebautes Wissen in Erinnerung. Die persönliche Sichtweise bezüglich einer 
-Entscheidung kann durch das Ablegen einer Karte auf dem Spielfeld zum Ausdruck gebracht werden. 
-Jede Spieler:in benötigt ein Karten-Set.</p>
+Die Spielkarten beschreiben zum einen die Fragestellung sowie passende Muster und Lösungsstrategien.</p>
 <h2 id="spielverlauf">Spielverlauf<a class="headerlink" href="#spielverlauf" title="Permanent link">⚓︎</a></h2>
-<p>Das Spiel führt das Entwicklungsteam entlang des Architekturmusters und der Entscheidungskategorien. Schritt für Schritt 
-werden die Enabler Architecture Decisions getroffen. Wechselwirkungen zwischen einzelnen Entscheidungen berücksichtigt der
-Spielablauf in der Reihenfolge der aufgeführten Entscheidungen. Jede Entscheidung besteht aus den folgenden Elementen:</p>
+<p>Das Spiel führt die Spieler und Spielerinnen entlang der Entscheidungskategorien, von inneren <em>Ring / Hexagon / Onion</em>
+zum äußeren. Für jede Entscheidung startet ein Entscheidungsfindungsprozess zwischen den Spieler:innen.
+Wechselwirkungen zwischen Entscheidungen sind auf dem Spielfeld angegeben und müssen bei der Entscheidungsfindung ebenfalls
+berücksichtigt werden.</p>
+<p>Die Entscheidungskategorien werden in der folgenden Reihenfolge durchlaufen:</p>
+<ol>
+<li>Domänenkern</li>
+<li>Anwendungsfälle</li>
+<li>Mappings</li>
+<li>Modularization</li>
+</ol>
+<p>Bestandteile des Entscheidungsfindungsprozess einer taktischen Architekturentscheidung sind:</p>
 <ul>
 <li>Austausch über Fragestellung und Lösungsstrategie für das gemeinsame Verständnis</li>
 <li>Austausch über Fragestellung und Lösungsstrategie im spezifischen Projektkontext anhand bekannter Anwendungsfälle und Qualitätsanforderungen</li>
 <li>Formulierung von Entscheidungsalternativen</li>
 <li>Finden einer Konsententscheidung im Team</li>
 </ul>
-<p>Jede Entscheidung muss innerhalb einer Timebox von 30 Minuten gefunden werden. Ist dies nicht möglich, ist die Reife
-für die Entscheidung nicht gegeben. In diesem Fall muss die Mission zu einem späteren Zeitpunkt wiederholt werden. 
+<p>Jede Entscheidung muss innerhalb einer Timebox von 30 Minuten gefunden werden. Ist dies nicht möglich, 
+muss die Mission zu einem späteren Zeitpunkt wiederholt werden. 
 Von dieser Timebox sind mindestens 10 Minuten für die Formulierung von Entscheidungsalternativen und für das Treffen 
 der Entscheidung zu verwenden. Bei großen Teams kann die Timebox erhöht werden, sollte jedoch als Richtwert 45 Minuten
 nicht überschreiten.</p>
-<p>Durch den Austausch über die Fragestellung und mögliche Lösungsstrategien geht das Team gemeinsam in die Entscheidungsfindung 
-über, indem die persönliche Einschätzung zur Fragestellung geteilt wird und dies wiederum Feedback generiert.</p>
+<blockquote>
+<p>Spielfeld</p>
+</blockquote>
+<p><img alt="Spiefeld Tactical Architecture Game" src="../../img/tag-playground.png" /></p>
 
 <!-- Source file information -->
 
@@ -641,7 +681,7 @@ nicht überschreiten.</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.footer", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>

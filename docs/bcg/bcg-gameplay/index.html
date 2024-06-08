@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../img/logo.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
@@ -138,7 +138,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -534,7 +534,7 @@
 <!-- Actions -->
 
   
-    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/bcg/bcg-gameplay.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/edit/master/docs/docs/bcg/bcg-gameplay.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -543,7 +543,7 @@
     
       
     
-    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/bcg/bcg-gameplay.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/raw/master/docs/docs/bcg/bcg-gameplay.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
@@ -562,64 +562,74 @@
 <!-- Page content -->
 <h1 id="das-bounded-context-game">Das Bounded Context Game<a class="headerlink" href="#das-bounded-context-game" title="Permanent link">⚓︎</a></h1>
 <h2 id="ziel-des-spiels">Ziel des Spiels<a class="headerlink" href="#ziel-des-spiels" title="Permanent link">⚓︎</a></h2>
-<p>Das Ziel des Bounded Context Game ist es, Bounded Context-Kandidaten anhand der Heuristiken </p>
+<p>Das Ziel des Bounded Context Game ist es, Bounded Context-Kandidaten anhand bekannter Heuristiken zu identifizieren und zu beschreiben.</p>
+<p>Heuristiken für den Bounded Context Schnitte:</p>
 <ul>
 <li>Business Capabilities</li>
 <li>Sprach- und Modellunterschiede, </li>
-<li>Einseitiger Informationfluss,</li>
-<li>Kohäsive Gruppierung von Aktivitäten, </li>
-<li>Unterschiedliche Auslöser, </li>
-<li>Prozesse, Workflows und Use Case sowie </li>
+<li>Einseitiger Informationsfluss,</li>
+<li>Kohäsive Gruppierung von Aktivitäten (Prozesse, Workflows und Use Cases), </li>
+<li>Unterschiedliche Auslöser,</li>
 <li>Teams und Lokation</li>
 </ul>
-<p>zu identifizieren und zu definieren. </p>
 <h3 id="die-mission">Die Mission<a class="headerlink" href="#die-mission" title="Permanent link">⚓︎</a></h3>
-<p>Einen Bounded Context zu identifizieren und zu beschreiben, stellt die Mission des Teams dar. 
+<p>Einen Bounded Context zu identifizieren und in einem Mindestumfang zu beschreiben, stellt eine Mission für das Team dar. 
 Die Mission ist erfüllt, wenn Einigkeit hinsichtlich der vollständigen Verortung aller gewünschten 
-Fähigkeiten auf Bounded Contexts erfolgt ist und alle Bounded Contexts definiert sind. </p>
-<p>Der Mindestumfang beschreibt mindestens den Zweck, die Verantwortlichkeiten und die Existenzbegründung des
-Bounded Contexts sowie die zugrunde liegenden Heuristiken für den Schnitt. 
-Des Weiteren gehört ein gemeinsames Verständnis über die wichtigsten Geschäftsereignisse und Domänenobjekte sowie 
-deren spezifische Bedeutung im Bounded Context dazu.</p>
+Fähigkeiten der Business-Domäne auf Bounded Contexts erfolgt ist und alle Bounded Contexts im Mindestumfang beschrieben sind. </p>
+<p>Zum Mindestumfang gehört:
+* Zweck, Verantwortlichkeiten, Existenzbegründung
+* angewendete Heuristiken für den Schnitt 
+* Wichtigste Geschäftsereignisse und Domänenobjekte (sowie die Bounded Context spezifische Bedeutung der Ereignisse und Domänenobjekte).</p>
 <p>Eine empfehlenswerte Vorlage für die Beschreibung eines Bounded Contexts mit dem beschriebenen Mindestumfang 
 ist das Bounded Context Canvas der DDD-Crew, das über die unterschiedlichen Spiele der DDD-Cards iterativ
 vervollständigt werden kann.</p>
 <h2 id="spielvorbereitung">Spielvorbereitung<a class="headerlink" href="#spielvorbereitung" title="Permanent link">⚓︎</a></h2>
-<p>Die Vorbedingung für das Spielen des Bounded Context Game ist die Wissensgrundlage für die Mission. 
-Diese Wissensgrundlage findet sich in dieser Artikelserie in der Business Capability Map, im Event Storm und in 
-Domain Stories. Metaphorisch (oder auch physisch) stellt diese Wissensgrundlage das Spielfeld des Bounded Context Game 
-dar (siehe Abb. 9). Auch Beschreibungen auf Basis anderer Methoden, wie z.B. Example Mapping, sind möglich. 
-Unabhängig davon ist es zu empfehlen, dass Teilnehmer/innen des Bounded Context Game ebenfalls zu den Teilnehmenden 
-der Workshops gehörten, bei denen diese Artefakte angefertigt wurden. Eine Voraussetzung für das Bounded Context Game 
-ist dies jedoch nicht, solange ausreichend Teilnehmer/innen dabei sind, die Wissen und Informationen diesbezüglich 
-teilen können.</p>
+<p>Um das Bounded Context Game zu spielen, wird visualisiertes Wissen über die Business-Domäne benötigt.</p>
+<p>Diese Wissensgrundlage ensteht als Ergebnisse der Domain Discovery mittels Collaborative Modeling. Aus unserer Erfahrung
+passende Visualisierung von Domänenwissen find sich in 
+* einer Business Capability Map, 
+* in einem Event Storm,
+* in Domain Stories,
+* Examples und Rules auf Basis von Example Mapping.
+* Customer Journey Modellen sowie
+* fachlichen Prozessmodellen.</p>
+<p>Metaphorisch oder auch physisch stellen diese Modelle das Spielfeld des Bounded Context Game.</p>
+<p>Benennung einer fachkundigen Moderator/in und eines Scopes, falls die Business-Domäne zu groß ist.</p>
 <h2 id="spielverlauf">Spielverlauf<a class="headerlink" href="#spielverlauf" title="Permanent link">⚓︎</a></h2>
-<p>Sind nicht alle Spieler/innen mit den Herausforderungen, Szenarien und Anwendungsfällen, die auf dem Spielfeld
-dargestellt sind, vertraut, beginnt das Spiel mit einer Darstellung und Erklärung dieser durch die vorhandenen 
-Wissensträger/innen. Abhängig vom Umfang kann dies zwischen 30 und 90 Minuten in Anspruch nehmen. 
-Dies ist die Spielphase "Wissen teilen". Die einzelnen Spielphasen sind in Abb. 10 dargestellt.</p>
+<blockquote>
+<p>(Optional) 0 Präsentation der Business-Domäne (30 bis 60 Minuten)</p>
+</blockquote>
+<p>Präsentation der Business-Domäne und den gewünschten Fähigkeiten und Anwendungsfälle anhand der Visualisierung der Domain Discovery
+und ergänzenden Materialien.</p>
+<p>Dies ist notwendig, wenn nicht alle Spieler/innen mit den Herausforderungen, Szenarien und Anwendungsfällen vertraut sind.</p>
+<blockquote>
+<p>1 Wissen teilen (30 bis 90 Minuten)</p>
+</blockquote>
+<p>Die Moderator/in stellt die Artefakte der Domain Discovery vor und erläutert die Zusammenhänge und Herausforderungen der Business-Domäne.
+Die Spieler/innen haben die Möglichkeit, Fragen zu stellen und sich mit den Artefakten auseinanderzusetzen.</p>
+<blockquote>
+<p>2 Austausch und Analyse (30 bis 60 Minuten)</p>
+</blockquote>
 <p>In der nächsten Spielphase setzt sich jede Spieler/in für sich oder im Austausch mit anderen Spieler/innen in 
 Kleingruppen mit den fachlichen Artefakten auseinander und analysiert den Sachverhalt hinsichtlich der anzuwendenden 
-Heuristiken. Diese Spielphase namens „Austausch und Analyse“ hat eine vereinbarte Timebox zwischen 30 und 60 Minuten, 
-in der keine Karten auf das Spielfeld gelegt werden. Die Gedanken und Schlussfolgerungen der Spieler/innen sollen sich 
-in dieser Phase, mit Ausnahme eines freiwilligen Austausches in Kleingruppen, unvoreingenommen entwickeln können. 
-Nach Ablauf der Timebox beginnt die erste Spieler/in ihre Karten zu legen und ihre Perspektive anhand der gelegten 
-Heuristiken zu begründen. Dadurch erhält die Diskussion einen Scope, und andere Spieler/innen werden eingeladen, 
+Heuristiken. </p>
+<blockquote>
+<p>3 Karten legen und Bounded Context definieren (30 bis 60 Minuten)</p>
+</blockquote>
+<p>Mindestens eine Spieler/in beginnt nun ihren ersten Bounded Context Schnitt auf dem Spielfeld zu visualisieren und die Karten 
+zum Schnitt zu legen, die als Heuristik für den Schnitt angewendet werden.</p>
+<p>Heuristiken zu begründen. Dadurch erhält die Diskussion einen Scope, und andere Spieler/innen werden eingeladen, 
 ihre Karten ebenfalls zu legen und ihre Perspektive zu erläutern. An dieser Stelle ist die Moderator/in gefordert, 
-die Gruppendiskussion zu lenken, sodass nach 30 bis 60 Minuten eine erste Beschreibung für einen Bounded Context entsteht. 
-In der Regel bringt diese Diskussion bereits Anhaltspunkte für weitere Bounded Context Kandidaten zum Vorschein, 
+die Gruppendiskussion zu lenken, sodass nach 30 bis 60 Minuten eine erste Beschreibung für einen Bounded Context entsteht. </p>
+<p>In der Regel bringt diese Diskussion bereits Anhaltspunkte für weitere Bounded Context Kandidaten zum Vorschein, 
 und der nächste Schritt kristallisiert sich durch die Spieldynamik heraus. Ist dies nicht der Fall, beginnt wieder eine 
-Spieler/in den Austausch im Team und die Findung des Scopes für den nächsten Schritt, durch das Legen ihrer Karten.</p>
-<p>Das Spiel ist beendet, wenn für jeden Bereich auf dem Spielfeld Karten gelegt wurden und auf Basis der Teamarbeit 
-Bounded Contexts Schnitte als weitere Arbeitsgrundlage beschrieben sind. Durchaus herausfordernd für die Moderator/in 
-in einer größeren Gruppe ist die Herbeiführung von Entscheidungen, die die Problemstellung adäquat adressieren und ein
-Commitment im Team erhalten. Ist es schwierig, ein Commitment zu erzielen, empfiehlt sich der Einsatz von Methoden für 
-die Entscheidungsfindung, wie z.B. Dot-Voting oder Thumb-Voting. Für Thumb-Voting kann das Bounded Context Game mit 
-unFix Decision Patterns [16] ergänzt werden. Dot-Voting ist sowohl vor Ort mit Stift oder Klebepunkten als auch remote 
-auf einem Collaboration Board einfach durchführbar.</p>
-<p>Abb. 11 und Abb. 12 visualisieren beispielhaft das bespielte Spielfeld des Bounded Context Game zur Verdeutlichung des
-beschriebenen Spielablaufs. Dargestellt sind die Artefakte der Domain Discovery und die gelegten Spielkarten, um die 
-Treiber für den Bounded Context Schnitt festzuhalten.</p>
+Spieler/in mit der visualisierung eines Schnitts und legen der Karten.</p>
+<p>Das Spiel ist beendet, wenn alle Bereiche des Spielfeldes in einem Bounded Context enthalten sind und jeder Bounded Context
+im Team entschieden und beschrieben ist.</p>
+<blockquote>
+<p>Visueller Spielablauf</p>
+</blockquote>
+<p><img alt="Spielablauf Bounded Context Game" src="../../img/bcg-gameplay.png" /></p>
 
 <!-- Source file information -->
 
@@ -714,7 +724,7 @@ Treiber für den Bounded Context Schnitt festzuhalten.</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.footer", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
