@@ -16,3 +16,9 @@ Die Kernidee der Gamification besteht darin, Prinzipien und Elemente aus Spielen
 Ein weiterer wichtiger Aspekt von Domain-Driven Design Cards ist das Ziel, alle Mitglieder der Gruppe gleichwertig zu involvieren, unabhängig von ihrem Wissensstand und Charaktertyp. Dies trägt darüber hinaus zu den Zielen der Domain-Driven Design Philosophie bei, die eine Kultur des breiten gemeinsamen Verständnisses und der Zusammenarbeit anstrebt. Domain-Driven Design Cards basieren auf der Annahme, dass in der Realität selten eine Gruppe existiert, die durchgehend über tiefes Wissen im Bereich DDD verfügt. Daher ist die Zielsetzung von Domain-Driven Design Cards, dass die Nutzung auch ohne spezielle Expertise möglich ist. Die Spieler/innen werden durch die Spielkarten, durch eine Expert/in in DDD sowie eine Moderator/in unterstützt. Bei einer Modernisierung mit Hilfe eines AMET, werden diese Rollen durch das AMET abgedeckt.
 
 Die Spiele Bounded Context Game, Strategic Classification Game, Context Mapping Game und Architecture Game von Domain-Driven Design Cards bieten Raum für Kommunikation, Wissensaustausch und -aufbau sowie für die gemeinschaftliche Gestaltung der Architektur mittels DDD auf strategischer, sozio-technischer und taktischer Architekturebene.
+
+## Entscheidungsfindung im Team
+
+Entscheidungsfindung im Team unterstützen ergänzend Methoden, wie z.B. Dot-Voting oder Thumb-Voting.
+Für Thumb-Voting kann das Bounded Context Game mit [unFix Decision Patterns](https://unfix.com/decision-patterns) ergänzt werden.
+Dot-Voting ist sowohl vor Ort mit Stift oder Klebepunkten als auch remote auf einem Collaboration Board einfach durchführbar.
