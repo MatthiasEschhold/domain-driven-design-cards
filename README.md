@@ -2,6 +2,8 @@
 
 Download as zip-file, fork or clone the repository.
 
+You find a detailed description in ENGLISH and GERMAN below.
+
 ## Enable Domain-Driven Design with Gamification
 
 Domain-Driven Design Cards offer valuable methodological support for a range of strategic and 
@@ -44,3 +46,20 @@ Discover the tactical architectural plan collaboratively within the development 
 
 ![Overview Card Deck Tactical Architecture Game](./cards/Tactical_Architecture_Game_Cards_Overview.png)
 
+## The Domain-Driven Design Cards Game Collection in German
+
+1. [Enabling Domain-Driven Design mit Gamification](./mkdocs.md)
+2. [Das Bounded Context Game](./docs/bcg/bcg-gameplay-de.md)
+3. [Das Strategic Classification Game](./docs/scg/scg-gameplay-de.md)
+4. [Das Context Mapping Game](./docs/cmg/cmg-gameplay-de.md)
+5. [Das Tactical Architecture Game](./docs/tag/tag-gameplay-de.md)
+6. [Architecture Enabling mittels kollaborativen Architekturentscheidungen](./docs/tag/tag-overview-de.md)
+
+## The Domain-Driven Design Cards Game Collection in English
+
+1. [Enabling Domain-Driven Design with Gamification](./mkdocs-en.md)
+2. [The Bounded Context Game](./docs/bounded-context-game-en.md)
+3. [The Strategic Classification Game](./docs/scg/strategic-classification-game-en.md)
+4. [The Context Mapping Game](./docs/cmg/context-mapping-game-en.md)
+5. [The Tactical Architecture Game](./docs/tag/tactical-architecture-game-en.md)
+6. [Architecture Enabling Based On Collaborative Design Decisions](./docs/tag/tag-overview.md)
