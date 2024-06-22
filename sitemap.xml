@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/mkdocs/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/bcg/bcg-gameplay/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/bcg/bcg-gameplay-de/</loc>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/cmg/cmg-gameplay/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/cmg/cmg-gameplay-de/</loc>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/scg/scg-gameplay/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/scg/scg-gameplay-de/</loc>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/tag/tag-gameplay/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/tag/tag-gameplay-de/</loc>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/tag/tag-overview/</loc>
-         <lastmod>2024-06-08</lastmod>
+         <loc>https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/tag/tag-overview-de/</loc>
+         <lastmod>2024-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
