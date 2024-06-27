@@ -1,0 +1,1590 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/MatthiasEschhold/domain-driven-design-cards/docs/tag/tag-overview-en/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Architecture Enabling through Collaborative Architecture Decisions - domain-driven-design-cards</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#brief-description-of-the-tactical-architecture-game" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="domain-driven-design-cards" class="md-header__button md-logo" aria-label="domain-driven-design-cards" data-md-component="logo">
+      
+  <img src="../../img/arkem-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            domain-driven-design-cards
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Architecture Enabling through Collaborative Architecture Decisions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    domain-driven-design-cards
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="domain-driven-design-cards" class="md-nav__button md-logo" aria-label="domain-driven-design-cards" data-md-component="logo">
+      
+  <img src="../../img/arkem-white.png" alt="logo">
+
+    </a>
+    domain-driven-design-cards
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    domain-driven-design-cards
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mkdocs.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enable DDD mit Gamification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bcg/bcg-gameplay-de/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bounded Context Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scg/scg-gameplay-de/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategic Classification Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cmg/cmg-gameplay-de/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context Mapping Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tag-gameplay-de/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tactical Architecture Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brief-description-of-the-tactical-architecture-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brief Description of the Tactical Architecture Game
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabler-architecture-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabler Architecture Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enabler Architecture Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-category-domain-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Category Domain Core
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Category Domain Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-into-domain-centric-architectural-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration into Domain-Centric Architectural Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-1-by-what-principle-should-the-domain-model-be-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #1: By what principle should the domain model be implemented?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #1: By what principle should the domain model be implemented?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-2-how-should-the-value-object-pattern-be-applied-in-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #2: How should the Value Object pattern be applied in implementation?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #2: How should the Value Object pattern be applied in implementation?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-3-how-should-the-value-object-pattern-be-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #3: How should the Value Object pattern be implemented?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #3: How should the Value Object pattern be implemented?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-4-how-is-business-consistency-ensured-when-using-the-anemic-domain-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #4: How is business consistency ensured when using the Anemic Domain Model?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #4: How is business consistency ensured when using the Anemic Domain Model?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-5-how-is-validation-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #5: How is validation implemented?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #5: How is validation implemented?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-6-what-object-creation-strategy-should-be-used-for-complex-business-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #6: What object creation strategy should be used for complex business objects?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #6: What object creation strategy should be used for complex business objects?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-scenarios-of-object-creation-in-domain-centric-architectural-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common scenarios of object creation in domain-centric architectural patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-category-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Category Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Category Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-into-domain-centric-architectural-patterns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration into Domain-Centric Architectural Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-7-how-are-use-cases-segmented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #7: How are use cases segmented?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #7: How are use cases segmented?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-scenarios-and-suitable-solution-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common scenarios and suitable solution strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-category-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Category Mappings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Category Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-into-domain-centric-architectural-patterns_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration into Domain-Centric Architectural Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-8-what-mapping-strategy-is-used-as-the-default-strategy-and-which-scenarios-suit-alternative-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #8: What mapping strategy is used as the default strategy, and which scenarios suit alternative strategies?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #8: What mapping strategy is used as the default strategy, and which scenarios suit alternative strategies?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-scenarios-and-suitable-solution-strategies_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common scenarios and suitable solution strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-9-how-are-mappings-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #9: How are mappings implemented?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #9: How are mappings implemented?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-category-modularization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Category Modularization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Category Modularization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-10-vertical-vs-horizontal-layering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #10: Vertical vs. Horizontal Layering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #10: Vertical vs. Horizontal Layering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-11-how-is-modularization-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #11: How is modularization implemented?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #11: How is modularization implemented?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-12-how-are-business-modules-structured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #12: How are business modules structured?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #12: How are business modules structured?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-decision-13-how-is-the-dependency-between-two-aggregates-handled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Decision #13: How is the dependency between two aggregates handled?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Decision #13: How is the dependency between two aggregates handled?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precondition_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precondition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-standard_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-strategies_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-if-the-decision-is-not-consciously-made_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk if the decision is not consciously made
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Tags -->
+
+
+<!-- Actions -->
+
+  
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/tag/tag-overview-en.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/MatthiasEschhold/domain-driven-design-cards.git/domain-driven-design-cards/docs/docs/tag/tag-overview-en.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<!--
+  Check whether the content starts with a level 1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+
+<!---->
+<!--<h1>Architecture Enabling through Collaborative Architecture Decisions</h1>-->
+<!---->
+
+<!-- Page content -->
+<h1 id="architecture-enabling-through-collaborative-architecture-decisions">Architecture Enabling through Collaborative Architecture Decisions<a class="headerlink" href="#architecture-enabling-through-collaborative-architecture-decisions" title="Permanent link">⚓︎</a></h1>
+<h2 id="brief-description-of-the-tactical-architecture-game">Brief Description of the Tactical Architecture Game<a class="headerlink" href="#brief-description-of-the-tactical-architecture-game" title="Permanent link">⚓︎</a></h2>
+<p>The Tactical Architecture Game is a gamification approach to collaboratively finding the tactical construction plan for software architecture within a team.</p>
+<p>The game is based on a set of architecture decisions that collectively represent the construction plan. These decisions provide guiding principles for the tactical architecture that a team should commit to. Due to their significance, these decisions are referred to as Enabler Architecture Decisions.</p>
+<p>The Tactical Architecture Game, as described here, is designed for tactical domain-driven design in combination with domain-centric architectural patterns such as Clean, Hexagonal, and Onion Architecture. These fundamental decisions already establish soft standards for the architecture. The Enabler Architecture Decisions describe a concrete solution strategy to be applied to these soft standards.</p>
+<p>The Enabler Architecture Decisions span four decision categories:</p>
+<p><img alt="🧿" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f9ff.svg" title=":nazar_amulet:" /> <strong>Modularization</strong></p>
+<p><img alt="🧿" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f9ff.svg" title=":nazar_amulet:" /> <strong>Domain Core</strong></p>
+<p><img alt="🧿" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f9ff.svg" title=":nazar_amulet:" /> <strong>Use Cases</strong></p>
+<p><img alt="🧿" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f9ff.svg" title=":nazar_amulet:" /> <strong>Mappings</strong></p>
+<p>Each category typically contains multiple decisions.</p>
+<h2 id="enabler-architecture-decisions">Enabler Architecture Decisions<a class="headerlink" href="#enabler-architecture-decisions" title="Permanent link">⚓︎</a></h2>
+<h3 id="decision-category-domain-core">Decision Category Domain Core<a class="headerlink" href="#decision-category-domain-core" title="Permanent link">⚓︎</a></h3>
+<p>@ToDo</p>
+<h6 id="integration-into-domain-centric-architectural-patterns">Integration into Domain-Centric Architectural Patterns<a class="headerlink" href="#integration-into-domain-centric-architectural-patterns" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Architectural Pattern</th>
+<th style="text-align: left;">Affected Responsibility Area Two-Way Mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean Architecture</td>
+<td style="text-align: left;"><code>Entities Ring</code></td>
+</tr>
+<tr>
+<td>Hexagonal Architecture</td>
+<td style="text-align: left;"><code>Domain Hexagon</code></td>
+</tr>
+<tr>
+<td>Onion Architecture</td>
+<td style="text-align: left;"><code>Domain Service Onion</code> </br> <code>Domain Onion</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="architecture-decision-1-by-what-principle-should-the-domain-model-be-implemented"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #1: By what principle should the domain model be implemented?<a class="headerlink" href="#architecture-decision-1-by-what-principle-should-the-domain-model-be-implemented" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition">Precondition<a class="headerlink" href="#precondition" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard">Soft Standard<a class="headerlink" href="#soft-standard" title="Permanent link">⚓︎</a></h6>
+<p>With the decision for domain-driven design, the goal is to develop a domain model and implement it using the patterns of tactical design.</p>
+<p>For implementing a domain model, the fundamental decision between Rich Domain Model and Anemic Domain Model must be made. This decision determines how the domain model will be implemented and where business logic and rules will be located.</p>
+<p>The Rich Domain Model dictates that business logic is implemented within the domain object (Aggregate, Entity, Value Object). This allows for expressive naming of methods based on business functionality, as opposed to simple set and get methods. It also permits the business validation to ensure the consistency of a (Root) Entity to be implemented directly on the object. The same applies to Value Objects that implement validation of the business value.</p>
+<p>An Anemic Domain Model contains only the properties along with the associated getters and setters. Business logic and validation are exclusively implemented in Domain Services. The Anemic Domain Model is considered an anti-pattern, as it often leads to loss of business language and consistency violations. Nevertheless, a team must consciously make this decision.</p>
+<h6 id="solution-strategies">Solution Strategies<a class="headerlink" href="#solution-strategies" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Rich Domain Model</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Moderately Rich Domain Model</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Anemic Domain Model</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-2-how-should-the-value-object-pattern-be-applied-in-implementation"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #2: How should the Value Object pattern be applied in implementation?<a class="headerlink" href="#architecture-decision-2-how-should-the-value-object-pattern-be-applied-in-implementation" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_1">Precondition<a class="headerlink" href="#precondition_1" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Enabling Architecture Decision</th>
+<th style="text-align: left;">Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td style="text-align: left;"><code>Rich Domain Model</code> <br/> <code>Moderately Rich Domain Model</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="soft-standard_1">Soft Standard<a class="headerlink" href="#soft-standard_1" title="Permanent link">⚓︎</a></h6>
+<p>Following the Rich Domain Model often raises the question within teams of whether every business value should be implemented as a Value Object. Complex aggregates can potentially lead to numerous Value Objects.</p>
+<p>The recommendation is to always implement business values as Value Objects to enhance business functionality and robustness.</p>
+<p>Exceptions can be made if business values do not need to be validated or if business values are elements of a nested Value Object.</p>
+<p>Avoiding Value Objects and using only primitive data types for business values is also an option but is considered an anti-pattern. Especially in complex aggregates with a lot of validation logic, this can lead to hard-to-read code over time.</p>
+<h6 id="solution-strategies_1">Solution Strategies<a class="headerlink" href="#solution-strategies_1" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Every business value is implemented as a Value Object</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Only business values that require behavior and/or validation are implemented as Value Objects</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Every business value is implemented using primitive data types</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_1">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_1" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-3-how-should-the-value-object-pattern-be-implemented"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #3: How should the Value Object pattern be implemented?<a class="headerlink" href="#architecture-decision-3-how-should-the-value-object-pattern-be-implemented" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_2">Precondition<a class="headerlink" href="#precondition_2" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Enabling Architecture Decision</th>
+<th style="text-align: left;">Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td style="text-align: left;"><code>Rich Domain Model</code> <br/> <code>Moderately Rich Domain Model</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;"><code>Implementation of Business Values as a separate Object (Value Object pattern)</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="soft-standard_2">Soft Standard<a class="headerlink" href="#soft-standard_2" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h6 id="solution-strategies_2">Solution Strategies<a class="headerlink" href="#solution-strategies_2" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Every business value is implemented as a Value Object</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Only business values that require behavior and/or validation are implemented as Value Objects</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Every business value is implemented using primitive data types</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_2">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_2" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-4-how-is-business-consistency-ensured-when-using-the-anemic-domain-model"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #4: How is business consistency ensured when using the Anemic Domain Model?<a class="headerlink" href="#architecture-decision-4-how-is-business-consistency-ensured-when-using-the-anemic-domain-model" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_3">Precondition<a class="headerlink" href="#precondition_3" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Enabling Architecture Decision</th>
+<th style="text-align: left;">Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td style="text-align: left;"><code>Anemic Domain Model</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="soft-standard_3">Soft Standard<a class="headerlink" href="#soft-standard_3" title="Permanent link">⚓︎</a></h6>
+<p>When using the Anemic Domain Model, another element must be found for validation logic instead of the business objects themselves. One option is the Domain Service; however, this would place the responsibility for business logic and validation in one pattern. For increased business complexity, it is advisable to introduce a new element in the pattern language, such as a Validator.</p>
+<h6 id="solution-strategies_3">Solution Strategies<a class="headerlink" href="#solution-strategies_3" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Validation logic in Domain Services</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Separate element in the pattern language, associated with the domain core</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_3">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_3" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-5-how-is-validation-implemented"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #5: How is validation implemented?<a class="headerlink" href="#architecture-decision-5-how-is-validation-implemented" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_4">Precondition<a class="headerlink" href="#precondition_4" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard_4">Soft Standard<a class="headerlink" href="#soft-standard_4" title="Permanent link">⚓︎</a></h6>
+<p>Regardless of where validation is located in the pattern language, the development team needs a shared understanding of how validation should be implemented. Options range from native implementation in the used programming language to self-created abstractions to using third-party libraries.</p>
+<h6 id="solution-strategies_4">Solution Strategies<a class="headerlink" href="#solution-strategies_4" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Native implementation without abstraction</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Native implementation with abstraction</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Third-party libraries</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_4">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_4" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-6-what-object-creation-strategy-should-be-used-for-complex-business-objects"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #6: What object creation strategy should be used for complex business objects?<a class="headerlink" href="#architecture-decision-6-what-object-creation-strategy-should-be-used-for-complex-business-objects" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_5">Precondition<a class="headerlink" href="#precondition_5" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard_5">Soft Standard<a class="headerlink" href="#soft-standard_5" title="Permanent link">⚓︎</a></h6>
+<p>A Root Entity, Entity, or Value Object must always ensure a valid business state. The creation of business objects plays a crucial role in this. The tactical design pattern language describes the Factory, which takes responsibility for object creation when it is no longer possible through a simple constructor on the object itself.</p>
+<p>As an alternative to the Factory, the Builder pattern can be used, and Static Factory Methods are a good alternative or complement to constructors.</p>
+<p>Typically, there is no single creation process for a (Root) Entity. Therefore, a combination of solution strategies for each suitable scenario is a promising approach. Arbitrary and, in the worst case, contradictory use of solution strategies increases the structural complexity of the architecture. Thus, an active approach to this question is recommended.</p>
+<h6 id="common-scenarios-of-object-creation-in-domain-centric-architectural-patterns">Common scenarios of object creation in domain-centric architectural patterns<a class="headerlink" href="#common-scenarios-of-object-creation-in-domain-centric-architectural-patterns" title="Permanent link">⚓︎</a></h6>
+<ol>
+<li>A user executes use cases where the domain object needs to be created</li>
+<li>The state of a domain object needs to be read from storage</li>
+<li>The state of a domain object results from different sources (e.g., storage and external service)</li>
+<li>Business logic necessitates the (re)creation of domain objects as part of the domain logic control flow</li>
+</ol>
+<h6 id="solution-strategies_5">Solution Strategies<a class="headerlink" href="#solution-strategies_5" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Factory</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Static Method Factory</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Constructor</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Builder</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Your Strategy (Wildcard)</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_5">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_5" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h3 id="decision-category-use-cases">Decision Category Use Cases<a class="headerlink" href="#decision-category-use-cases" title="Permanent link">⚓︎</a></h3>
+<p>@ToDo</p>
+<h6 id="integration-into-domain-centric-architectural-patterns_1">Integration into Domain-Centric Architectural Patterns<a class="headerlink" href="#integration-into-domain-centric-architectural-patterns_1" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Architectural Pattern</th>
+<th style="text-align: left;">Affected Responsibility Area Two-Way Mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean Architecture</td>
+<td style="text-align: left;"><code>Use Case Ring</code></td>
+</tr>
+<tr>
+<td>Hexagonal Architecture</td>
+<td style="text-align: left;"><code>Application Hexagon</code></td>
+</tr>
+<tr>
+<td>Onion Architecture</td>
+<td style="text-align: left;"><code>Application Onion</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="architecture-decision-7-how-are-use-cases-segmented"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #7: How are use cases segmented?<a class="headerlink" href="#architecture-decision-7-how-are-use-cases-segmented" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_6">Precondition<a class="headerlink" href="#precondition_6" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard_6">Soft Standard<a class="headerlink" href="#soft-standard_6" title="Permanent link">⚓︎</a></h6>
+<p>Use cases are the interfaces of the business application and are defined from the domain's perspective. Various heuristics can be used, and no heuristic is inherently the best. What is crucial is a shared understanding and consistent application, which depends on specific scenarios.</p>
+<h6 id="common-scenarios-and-suitable-solution-strategies">Common scenarios and suitable solution strategies<a class="headerlink" href="#common-scenarios-and-suitable-solution-strategies" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h6 id="solution-strategies_6">Solution Strategies<a class="headerlink" href="#solution-strategies_6" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Use case per function</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Use case for all command operations</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Use case for all query operations</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Use case for all interfaces related to a (Root) Entity</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Use case for all interfaces to a technical component (e.g., database) within a business module boundary</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Your Strategy (Wildcard)</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_6">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_6" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h3 id="decision-category-mappings">Decision Category Mappings<a class="headerlink" href="#decision-category-mappings" title="Permanent link">⚓︎</a></h3>
+<p>Decisions about mapping strategies significantly influence the long-term strength of the coupling of architectural components. However, mappings can also be overhead in the short term, so a good balance suitable for different scenarios must be found within the team.</p>
+<h6 id="integration-into-domain-centric-architectural-patterns_2">Integration into Domain-Centric Architectural Patterns<a class="headerlink" href="#integration-into-domain-centric-architectural-patterns_2" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Architectural Pattern</th>
+<th style="text-align: left;">Affected Responsibility Area Two-Way Mapping</th>
+<th style="text-align: left;">Affected Responsibility Area Full Mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean Architecture</td>
+<td style="text-align: left;"><code>Interface Adapters Ring</code></td>
+<td style="text-align: left;"><code>Interface Adapters Ring</code><br/><code>Use Case Ring</code></td>
+</tr>
+<tr>
+<td>Hexagonal Architecture</td>
+<td style="text-align: left;"><code>Adapters Hexagon</code></td>
+<td style="text-align: left;"><code>Adapters Hexagon</code><br/><code>Application Hexagon</code></td>
+</tr>
+<tr>
+<td>Onion Architecture</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><code>Adapters Onion</code>                             | <code>Adapters Onion</code><br/><code>Application Onion</code>      |</p>
+<h4 id="architecture-decision-8-what-mapping-strategy-is-used-as-the-default-strategy-and-which-scenarios-suit-alternative-strategies"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #8: What mapping strategy is used as the default strategy, and which scenarios suit alternative strategies?<a class="headerlink" href="#architecture-decision-8-what-mapping-strategy-is-used-as-the-default-strategy-and-which-scenarios-suit-alternative-strategies" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_7">Precondition<a class="headerlink" href="#precondition_7" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard_7">Soft Standard<a class="headerlink" href="#soft-standard_7" title="Permanent link">⚓︎</a></h6>
+<p>This decision has already been explained in the description of Clean Architecture.</p>
+<h6 id="common-scenarios-and-suitable-solution-strategies_1">Common scenarios and suitable solution strategies<a class="headerlink" href="#common-scenarios-and-suitable-solution-strategies_1" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h6 id="solution-strategies_7">Solution Strategies<a class="headerlink" href="#solution-strategies_7" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> One-Mapping</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Two-Way Mapping</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Full Mapping</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> No Mapping</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Your Strategy (Wildcard)</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_7">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_7" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-9-how-are-mappings-implemented"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #9: How are mappings implemented?<a class="headerlink" href="#architecture-decision-9-how-are-mappings-implemented" title="Permanent link">⚓︎</a></h4>
+<table>
+<thead>
+<tr>
+<th>Enabling Architecture Decision</th>
+<th style="text-align: left;">Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td style="text-align: left;"><code>Two-Way Mapping Strategy</code> <br/> <code>Full Mapping Strategy</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="soft-standard_8">Soft Standard<a class="headerlink" href="#soft-standard_8" title="Permanent link">⚓︎</a></h6>
+<p>For the Two-Way and Full Mapping strategies, the question of how mappings should be implemented arises. A unified solution strategy is recommended to avoid unnecessary complexity in implementation. Each strategy has its pros and cons, and ultimately it must also suit the team's preferences. Therefore, this decision should be consciously made within the team.</p>
+<h6 id="solution-strategies_8">Solution Strategies<a class="headerlink" href="#solution-strategies_8" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Native implementation through a separate element in the pattern language (e.g., Mapper)</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Native implementation as logic of the Interface Adapter (e.g., private method)</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Implementation through a separate element in the pattern language as well as using third-party libraries</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Your Strategy (Wildcard)</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_8">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_8" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h3 id="decision-category-modularization">Decision Category Modularization<a class="headerlink" href="#decision-category-modularization" title="Permanent link">⚓︎</a></h3>
+<p>Enabler Architecture Decisions in the category of modularization have a cross-cutting character and apply uniformly across all domain-centric architectural patterns.</p>
+<h4 id="architecture-decision-10-vertical-vs-horizontal-layering"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #10: Vertical vs. Horizontal Layering<a class="headerlink" href="#architecture-decision-10-vertical-vs-horizontal-layering" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_8">Precondition<a class="headerlink" href="#precondition_8" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard_9">Soft Standard<a class="headerlink" href="#soft-standard_9" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h6 id="solution-strategies_9">Solution Strategies<a class="headerlink" href="#solution-strategies_9" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Vertical and business-motivated layering at architecture level 1</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Technical layering at architecture level 1 with business layering at architecture level 2 and split packages</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_9">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_9" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-11-how-is-modularization-implemented"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #11: How is modularization implemented?<a class="headerlink" href="#architecture-decision-11-how-is-modularization-implemented" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_9">Precondition<a class="headerlink" href="#precondition_9" title="Permanent link">⚓︎</a></h6>
+<h4 id="architecture-decision-12-how-are-business-modules-structured"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #12: How are business modules structured?<a class="headerlink" href="#architecture-decision-12-how-are-business-modules-structured" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_10">Precondition<a class="headerlink" href="#precondition_10" title="Permanent link">⚓︎</a></h6>
+<table>
+<thead>
+<tr>
+<th>Enabling Architecture Decision</th>
+<th style="text-align: left;">Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: left;"><code>Vertical Layering</code></td>
+</tr>
+</tbody>
+</table>
+<h6 id="soft-standard_10">Soft Standard<a class="headerlink" href="#soft-standard_10" title="Permanent link">⚓︎</a></h6>
+<p>The business module forms around an aggregate.
+Within this module, the responsibility areas (Ring, Hexagon, or Onion) of the domain-centric architectural pattern are represented.
+Various solution strategies are available for this.</p>
+<h6 id="solution-strategies_10">Solution Strategies<a class="headerlink" href="#solution-strategies_10" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Architecturally expressive</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Architecturally expressive in the business application</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Responsibility areas (Ring, Hexagon, or Onion) as layers</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_10">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_10" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+<h4 id="architecture-decision-13-how-is-the-dependency-between-two-aggregates-handled"><img alt="🚩" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a9.svg" title=":triangular_flag_on_post:" /> Architecture Decision #13: How is the dependency between two aggregates handled?<a class="headerlink" href="#architecture-decision-13-how-is-the-dependency-between-two-aggregates-handled" title="Permanent link">⚓︎</a></h4>
+<h6 id="precondition_11">Precondition<a class="headerlink" href="#precondition_11" title="Permanent link">⚓︎</a></h6>
+<p>None</p>
+<h6 id="soft-standard_11">Soft Standard<a class="headerlink" href="#soft-standard_11" title="Permanent link">⚓︎</a></h6>
+<p>In tactical domain-driven design, decoupling based on aggregate boundaries is pursued. Aggregates have an independent lifecycle.</p>
+<p>If a business connection needs to be established, one aggregate may reference another aggregate only through its identity. The reference must be resolved at runtime.</p>
+<p>Such dependencies should be treated uniformly and in a pattern-like manner to keep complexity low and the architecture easily understandable.</p>
+<p>Which pattern serves as the standard and in which scenarios alternative solution strategies are used must be collaboratively decided by the team.</p>
+<h6 id="solution-strategies_11">Solution Strategies<a class="headerlink" href="#solution-strategies_11" title="Permanent link">⚓︎</a></h6>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Application Service Pattern</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Adapter Out Use Case In Pattern</p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> Event-driven / Publish-Subscribe Pattern</p>
+<h6 id="risk-if-the-decision-is-not-consciously-made_11">Risk if the decision is not consciously made<a class="headerlink" href="#risk-if-the-decision-is-not-consciously-made_11" title="Permanent link">⚓︎</a></h6>
+<p>@ToDo</p>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+
+
+
+<!-- Comment system -->
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.footer", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
