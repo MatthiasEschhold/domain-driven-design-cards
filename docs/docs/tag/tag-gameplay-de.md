@@ -22,10 +22,13 @@ Das Spiel führt die Spieler:innen entlang der Entscheidungskategorien, von inne
 
 Die Entscheidungskategorien werden in der folgenden Reihenfolge durchlaufen:
 
-1. Domänenkern
-2. Anwendungsfälle
-3. Mappings
-4. Modularisierung
+:nazar_amulet: **Domänenkern**
+
+:nazar_amulet: **Anwendungsfälle**
+
+:nazar_amulet: **Mappings**
+
+:nazar_amulet: **Modularisierung**
 
 Bestandteile des Entscheidungsfindungsprozesses einer taktischen Architekturentscheidung sind:
 

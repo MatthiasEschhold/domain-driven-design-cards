@@ -4,6 +4,12 @@ Download as zip-file, fork or clone the repository.
 
 You find a detailed description in ENGLISH and GERMAN below.
 
+## Release Notes
+
+* `UPDATE` cards of tactical architecture game
+* `NEW` version 1 of descriptions for all DDD cards games in german
+* `NEW` miro template tactical architecture game
+
 ## Enable Domain-Driven Design with Gamification
 
 Domain-Driven Design Cards offer valuable methodological support for a range of strategic and 
