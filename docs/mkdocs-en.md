@@ -13,7 +13,7 @@ _Team Topologies_ describes Enabler Teams with the task of helping other teams e
 * Architecture Modernization and Refactoring
 
 The goal of this collaboration is to enable Stream-Aligned Teams to complete their work in the desired timeframe and sustainably maintain the required quality.
-
+85
 Enabler Teams work with Stream-Aligned Teams for a temporary period, typically spanning weeks to a few months. The goal of the Enabler Team is to transfer knowledge and empower the teams so that Stream-Aligned Teams can continue the tasks independently in the future, ideally without losing focus on the continuous generation of a value stream.
 
 ## Software Architecture Enabling
@@ -38,7 +38,7 @@ Domain-Driven Design Cards are a playful approach to conveying and applying the 
 
 > Bounded Context Game
 >
-> Finding and defining Bounded Contexts based on the results of collaborative modeling techniques.
+> Find and define Bounded Contexts based on the results of collaborative modeling techniques.
 
 > Strategic Classification Game
 >
@@ -46,11 +46,11 @@ Domain-Driven Design Cards are a playful approach to conveying and applying the 
 
 > Context Mapping Game
 >
-> Finding and defining dependencies between Bounded Contexts based on the Context Mapping method.
+> Find and define dependencies between Bounded Contexts based on the Context Mapping method.
 
 > Tactical Architecture Game
 >
-> Finding a common architecture plan for implementing Bounded Contexts at the tactical architecture level.
+> Find a common architecture plan for implementing Bounded Contexts at the tactical architecture level.
 
 All games provide space for communication, knowledge sharing, and moderated professional discussion. This promises good decisions considering all relevant perspectives and fosters a team vision and sense of togetherness.
 

@@ -23,11 +23,13 @@ P
  docs/docs/tag/tag-overview-en.md,c\a\cac9e5d6fc811a76a432296e73303d6bc37b6eed
 >
 docs/mkdocs.md,d\4\d411533a45248154a0ccd99dca2e6a4afa22bca7
-F
-docs/docs/mkdocs-en.md,0\3\03bf8f5a6e56b065b612f4eb8e454b061f8ed513
 d
 4docs/docs/ddd-starter-process-with-gamifaction-de.md,2\3\23d92cea628d30d8b7fa81b0eb4d878c0279868c
 d
 4docs/docs/ddd-starter-process-with-gamifaction-en.md,4\1\4164227efccbd4b40b18751761b98ca2673f27a3
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+A
+docs/mkdocs-en.md,6\4\647da5a7a85b021e3124fc74b67d661d5aafe2e2
+Y
+)docs/docs/tag/architecture-patterns-de.md,a\d\ad72792788264fff793605108066a2edae9a394e
