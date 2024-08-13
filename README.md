@@ -55,17 +55,17 @@ Discover the tactical architectural plan collaboratively within the development 
 ## The Domain-Driven Design Cards Game Collection in German
 
 1. [Enabling Domain-Driven Design mit Gamification](./mkdocs.md)
-2. [Das Bounded Context Game](./docs/bcg/bcg-gameplay-de.md)
-3. [Das Strategic Classification Game](./docs/scg/scg-gameplay-de.md)
-4. [Das Context Mapping Game](./docs/cmg/cmg-gameplay-de.md)
-5. [Das Tactical Architecture Game](./docs/tag/tag-gameplay-de.md)
-6. [Architecture Enabling mittels kollaborativen Architekturentscheidungen](./docs/tag/tag-overview-de.md)
+2. [Das Bounded Context Game](./docs/docs/bcg/bcg-gameplay-de.md)
+3. [Das Strategic Classification Game](./docs/docs/scg/scg-gameplay-de.md)
+4. [Das Context Mapping Game](./docs/docs/cmg/cmg-gameplay-de.md)
+5. [Das Tactical Architecture Game](./docs/docs/tag/tag-gameplay-de.md)
+6. [Architecture Enabling mittels kollaborativen Architekturentscheidungen](./docs/docs/tag/tag-overview-de.md)
 
 ## The Domain-Driven Design Cards Game Collection in English
 
 1. [Enabling Domain-Driven Design with Gamification](./mkdocs-en.md)
-2. [The Bounded Context Game](./docs/bounded-context-game-en.md)
-3. [The Strategic Classification Game](./docs/scg/strategic-classification-game-en.md)
-4. [The Context Mapping Game](./docs/cmg/context-mapping-game-en.md)
-5. [The Tactical Architecture Game](./docs/tag/tactical-architecture-game-en.md)
-6. [Architecture Enabling Based On Collaborative Design Decisions](./docs/tag/tag-overview.md)
+2. [The Bounded Context Game](./docs/docs/bounded-context-game-en.md)
+3. [The Strategic Classification Game](./docs/docs/scg/strategic-classification-game-en.md)
+4. [The Context Mapping Game](./docs/docs/cmg/context-mapping-game-en.md)
+5. [The Tactical Architecture Game](./docs/docs/docs/tag/tactical-architecture-game-en.md)
+6. [Architecture Enabling Based On Collaborative Design Decisions](./docs/docs/tag/tag-overview.md)
