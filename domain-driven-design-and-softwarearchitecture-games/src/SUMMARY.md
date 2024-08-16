@@ -15,7 +15,7 @@
 
 # Application Architecture Pattern for Modular Monoliths
 
-- [Modular Monoliths](./introduction/introduction-en.md)
+- [Modular Monoliths](./tag/modular-monoliths-de)
     - [Package by Layer]()
     - [Package by Feature]()
     - [Package by Component]()
@@ -24,6 +24,6 @@
         - [Hexagonal Architecture]()
         - [Onion Architecture]()
     - [Architecture Pattern Decision Workshop]()
-- [Enabler Architecture Decisions for the Tactical Architecture Game](./tag/tag-overview-de.md)
+- [Enabler Architecture Decisions for the Tactical Architecture Game](./tag/enabler-architecture-decisions-domain-centric-pattern-de.md)
 
 # Application Architecture Enabling
