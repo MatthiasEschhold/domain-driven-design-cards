@@ -13,7 +13,7 @@ _Team Topologies_ describes Enabler Teams with the task of helping other teams e
 * Architecture Modernization and Refactoring
 
 The goal of this collaboration is to enable Stream-Aligned Teams to complete their work in the desired timeframe and sustainably maintain the required quality.
-85
+
 Enabler Teams work with Stream-Aligned Teams for a temporary period, typically spanning weeks to a few months. The goal of the Enabler Team is to transfer knowledge and empower the teams so that Stream-Aligned Teams can continue the tasks independently in the future, ideally without losing focus on the continuous generation of a value stream.
 
 ## Software Architecture Enabling

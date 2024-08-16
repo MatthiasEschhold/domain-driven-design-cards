@@ -1,5 +1,3 @@
-# Enabling Domain-Driven Design mit Gamification
-
 ## Enabling und Enabler Teams
 
 _Team Topologies_ beschreibt Enabler-Teams mit der Aufgabe andere Teams dabei zu unterstützen, ihren Entwicklungsprozess
