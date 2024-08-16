@@ -2,8 +2,8 @@
 site_name: domain-driven-design-cards
 site_url: https://github.com/MatthiasEschhold/domain-driven-design-cards
 repo_url: https://github.com/MatthiasEschhold/domain-driven-design-cards.git
-repo_name: domain-driven-design-cards
-edit_uri: domain-driven-design-cards/docs/
+repo_name: MatthiasEschhold/domain-driven-design-cards
+edit_uri: edit/develop/documentation/docs/
 
 extra_css:
   - css/custom.css
