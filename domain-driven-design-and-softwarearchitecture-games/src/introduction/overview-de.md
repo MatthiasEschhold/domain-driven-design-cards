@@ -14,7 +14,7 @@ Identify domain-related boundaries (subdomains, bounded contexts) within your bu
 
 ### Overview Card Deck
 
-![Overview Card Deck Bounded Context Game](./cards/Bounded_Context_Game_Cards_Overview.png)
+![Overview Card Deck Bounded Context Game](../img/Bounded_Context_Game_Cards_Overview.png)
 
 ## Context Mapping Game
 
@@ -22,7 +22,7 @@ Define dependencies between bounded contexts.
 
 ### Overview Card Deck
 
-![Overview Card Deck Context Mapping Game](./cards/Context_Mapping_Game_Cards_Overview.png)
+![Overview Card Deck Context Mapping Game](../img/Context_Mapping_Game_Cards_Overview.png)
 
 ## Strategic Classification Game
 
@@ -30,7 +30,7 @@ Determine the strategic importance of your subdomains and bounded contexts.
 
 ### Overview Card Deck
 
-![Overview Card Deck Strategic Classification Game](./cards/Strategic_Classification_Game_Cards_Overview.png)
+![Overview Card Deck Strategic Classification Game](../img/Strategic_Classification_Game_Cards_Overview.png)
 
 ## Tactical Architecture Game
 
@@ -38,4 +38,4 @@ Discover the tactical architectural plan collaboratively within the development 
 
 ### Overview Card Deck
 
-![Overview Card Deck Tactical Architecture Game](./cards/Tactical_Architecture_Game_Cards_Overview.png)
+![Overview Card Deck Tactical Architecture Game](../img/Tactical_Architecture_Game_Cards_Overview.png)
