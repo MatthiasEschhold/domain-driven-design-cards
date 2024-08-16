@@ -33,3 +33,12 @@ A
 docs/mkdocs-en.md,6\4\647da5a7a85b021e3124fc74b67d661d5aafe2e2
 Y
 )docs/docs/tag/architecture-patterns-de.md,a\d\ad72792788264fff793605108066a2edae9a394e
+Y
+)docs/docs/tag/architecture-patterns-en.md,8\0\80f7d5d668567ebf62c8ce73dd71a6efb18f3dd8
+[
++.github/workflows/mkdocs-publish-plugin.yml,a\1\a19105f0d8585d959f07504a4ac44a114d9b2d02
+:
+
+mkdocs.yml,e\0\e06ae62d2bf20523432731a2d6fa671c79156f34
+B
+mkdocs-publish.yml,4\f\4f3cf866e3f1193736803f65702af6e4789dd72b

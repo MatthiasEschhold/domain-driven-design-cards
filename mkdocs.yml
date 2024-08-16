@@ -50,7 +50,7 @@ plugins:
   - search
 
 nav:
-  - Home: 'README.md'
+  - Home: 'mkdocs.md'
   - Intro: 'index.md'
   - Enable DDD mit Gamification: 'docs/mkdocs.md'
   - Bounded Context Game: 'docs/bcg/bcg-gameplay-de.md'
