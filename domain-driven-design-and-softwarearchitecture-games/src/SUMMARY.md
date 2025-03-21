@@ -33,7 +33,7 @@
 - [Starting Architeture Decisions für domänenzentrierte Architekturmuster](../tag/tactical-architecture/tactical-architecture-decisions-domaincentric-de.md)
 - [Starting Architeture Decisions für vertikal geschichtete Architekturmuster]()
 
-# Enabling Domain Driven Design mittels Gamification
+# Domain-Driven Design Cards Game Collection
 
 - [Bounded Context Game](./bcg/bcg-gameplay-de.md)
 - [Context Mapping Game](./cmg/cmg-gameplay-de.md)
