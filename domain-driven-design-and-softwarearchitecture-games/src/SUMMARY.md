@@ -1,29 +1,30 @@
-# Summary
+# Wirksames Architecture Enabling und wirksame Architecture Leadership
 
-- [Einführung](./introduction/overview-de.md)
+- [Software Architecure Enabling](./introduction/introduction-de.md)
 
-# Enabling and Gamification
+# Domain Driven Design
 
-- [Enabling Domain Driven Design](./introduction/enabling-ddd-de.md)
+- [Einführung in Domain Driven Design]()
 
-# Domain Driven Design and Software Architecture Games
+## Strategische Softwarearchitektur
+
+- [Zerlegung der Business Domäne in Subdomänen]()
+- [Finden von Bounded Contexts]()
+- [Sozio-technische Architektur gestalten mittels Context Mapping]()
+- [Das Domänenmodell und Übergang zur taktischen Architekturebene]()
+
+## Taktische Softwarearchitektur
+
+- [Taktisches Domain-Driven Design]()
+- [Taktische Architekturstile]()
+- [Taktische Architekturmuster]()
+- [Taktische Architekturentscheidungen als Erfolgsfaktor]()
+- [Bewertung von Architekturmustern]()
+- [Starting Architecture Decisions]()
+
+# Enabling Domain Driven Design mittels Gamification
 
 - [Bounded Context Game](./bcg/bcg-gameplay-de.md)
 - [Context Mapping Game](./cmg/cmg-gameplay-de.md)
 - [Strategic Classification Game](./scg/scg-gameplay-de.md)
-- [Tactical Architecture Game](./tag/tag-gameplay-de.md)
-
-# Application Architecture Pattern for Modular Monoliths
-
-- [Modular Monoliths](./tag/modular-monoliths-de)
-    - [Package by Layer]()
-    - [Package by Feature]()
-    - [Package by Component]()
-    - [Domain-centric Patterns]()
-        - [Clean Architecture]()
-        - [Hexagonal Architecture]()
-        - [Onion Architecture]()
-    - [Architecture Pattern Decision Workshop]()
-- [Enabler Architecture Decisions for the Tactical Architecture Game](./tag/enabler-architecture-decisions-domain-centric-pattern-de.md)
-
-# Application Architecture Enabling
+- [Tactical Architecture Game](tag/tag-cp-game/tag-gameplay-de.md)

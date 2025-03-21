@@ -2,7 +2,7 @@
 
 Download as zip-file, fork or clone the repository.
 
-You find a detailed description in ENGLISH and GERMAN below.
+You will find a detailed description in both **_ENGLISH_** and **_GERMAN_** below.
 
 ## Release Notes
 
@@ -46,7 +46,7 @@ Determine the strategic importance of your subdomains and bounded contexts.
 
 ## Tactical Architecture Game
 
-Discover the tactical architectural plan collaboratively within the development team.
+Define the tactical architectural construction plan collaboratively within the development team.
 
 ### Overview Card Deck
 

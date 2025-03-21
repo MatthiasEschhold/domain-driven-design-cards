@@ -2,16 +2,17 @@
 
 ## Ziel des Spiels
 
-Das Ziel des Bounded Context Game ist es, Bounded Context-Kandidaten anhand bekannter Heuristiken 
-zu identifizieren und zu beschreiben.
+Das Ziel des Bounded Context Game ist es, Bounded Context-Kandidaten anhand bekannter 
+Heuristiken zu identifizieren und zu beschreiben.
 
-Heuristiken für den Bounded Context Schnitte sind:
+Heuristiken für Bounded Context Schnitte sind:
 
 * Business Capabilities
 * Sprach- und Modellunterschiede, 
 * Einseitiger Informationsfluss,
 * Kohäsive Gruppierung von Aktivitäten (Prozesse, Workflows und Use Cases), 
 * Unterschiedliche Auslöser,
+* Eigenständige Erzeugung von Ergebnissen,
 * Teams und Lokation
 
 ### Die Mission
@@ -26,21 +27,21 @@ Zum Mindestumfang gehört:
 * Angewendete Heuristiken für den Schnitt 
 * Wichtigste Geschäftsereignisse und Domänenobjekte
 
-Das Spiel besteht aus mehreren Missionen und ist zu Ende, 
-wenn alle Geschäftsfähigkeiten und -anforderungen der Spielgrundlage in Bounded Contexts 
-verortet sind.
+Das Spiel besteht aus mehreren Missionen und ist zu Ende, wenn alle Bounded Contexts
+einer Business-Domäne oder Subdomäne definiert sind.
 
 ## Spielvorbereitung
 
-Um das Bounded Context Game zu spielen, wird visualisiertes Wissen über die Business-Domäne benötigt.
+Um das Bounded Context Game zu spielen, wird visualisiertes Wissen über die 
+Business-Domäne benötigt.
 
 Diese Spielgrundlage entsteht als Ergebnisse der Domain Discovery mittels Collaborative Modeling. 
 Aus unserer Erfahrung passende Visualisierung von Domänenwissen finden sich in 
 * einer Business Capability Map, 
 * in einem Event Storm,
 * in Domain Stories,
-* Examples und Rules auf Basis von Example Mapping.
-* Customer Journey's,
+* Examples und Rules auf Basis von Example Mapping,
+* Customer Journeys,
 * fachlichen Prozessmodellen sowie
 * einer Kombination aus den genannten Artefakten.
 
@@ -50,9 +51,9 @@ Metaphorisch oder auch physisch stellen diese Modelle das Spielfeld des Bounded 
 
 > 1 Wissen teilen (30 bis 90 Minuten)
 
-Die Moderator/in stellt die Artefakte der Domain Discovery vor und erläutert die Zusammenhänge und 
-Herausforderungen der Business-Domäne. Die Spieler/innen haben die Möglichkeit, Fragen zu stellen und 
-sich mit den Artefakten auseinanderzusetzen.
+Die Moderator/in stellt die Artefakte der Domain Discovery vor und erläutert die 
+Zusammenhänge und Herausforderungen der Business-Domäne. Die Spieler/innen haben die 
+Möglichkeit, Fragen zu den fachlichen Anforderungen zu stellen.
 
 > 2 Austausch und Analyse (30 bis 60 Minuten)
 
@@ -63,8 +64,8 @@ den Sachverhalt hinsichtlich der anzuwendenden Heuristiken.
 > 3 Karten legen und Bounded Context definieren (30 bis 60 Minuten)
  
 Mindestens eine Spieler/in beginnt nun ihren ersten Bounded Context Schnitt auf dem Spielfeld 
-zu visualisieren (z.B. durch Einkreisung) und die Karten, die als Heuristik für den Schnitt 
-angewendet werden, zu legen.
+zu visualisieren (z.B. durch Einkreisung) und die Karten zu legen, die als Heuristik für den Schnitt 
+angewendet werden.
 
 Dadurch erhält die Diskussion einen Scope, und andere Spieler/innen werden eingeladen, 
 ihre Karten ebenfalls zu legen und ihre Perspektive zu erläutern. 
