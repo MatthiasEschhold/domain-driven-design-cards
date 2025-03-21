@@ -13,18 +13,22 @@
 - [Sozio-technische Architektur gestalten mittels Context Mapping]()
 - [Das Domänenmodell und Übergang zur taktischen Architekturebene]()
 
-## Taktische Softwarearchitektur
+# Taktische Softwarearchitektur
 
 - [Taktisches Domain-Driven Design]()
 - [Taktische Architekturstile]()
 - [Taktische Architekturmuster]()
-- [Taktische Architekturentscheidungen als Erfolgsfaktor]()
-- [Bewertung von Architekturmustern]()
-- [Starting Architecture Decisions]()
+
+## Taktische Architekturentscheidungen
+
+- [Taktische Architekturentscheidungen als Erfolgsfaktor](../tag/tactical-architecture/tactical-architecture-intro-de.md)
+- [Entscheidung für ein Architekturmuster]()
+- [Starting Architecture Decisions](../tag/tactical-architecture/tactical-architecture-decisions-de.md)
 
 # Enabling Domain Driven Design mittels Gamification
 
 - [Bounded Context Game](./bcg/bcg-gameplay-de.md)
 - [Context Mapping Game](./cmg/cmg-gameplay-de.md)
 - [Strategic Classification Game](./scg/scg-gameplay-de.md)
-- [Tactical Architecture Game Starting Architecture Decisions](tag/tag-cp-game/tag-gameplay-sad-de)
+- [Tactical Architecture Game Starting Architecture Decisions](./tag/tag-cp-game/tag-gameplay-ap-de.md)
+- [Tactical Architecture Game Starting Architecture Decisions](./tag/tag-cp-game/tag-gameplay-sad-de.md)

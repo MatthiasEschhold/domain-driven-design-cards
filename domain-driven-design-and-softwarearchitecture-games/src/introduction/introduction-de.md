@@ -1,52 +1,42 @@
 # Enabling Domain-Driven Design mit Gamification
 
-[//]: # (Mit Domain-Driven Design Cards bieten wir eine methodische Unterstützung mittels Gamification )
+Domain-Driven Design Cards (DDD-Cards) ist eine gamifizierte methodische Unterstützung 
+für strategisches und taktisches Domain-Driven Design.
 
-[//]: # (für strategisches und taktisches Domain-Driven Design an.)
+DDD-Cards ist ein gemeinschaftliches Projekt mit [nilsbert](https://github.com/nilsbert). 
+DDD-Cards beinhalten das **Context Mapping**, das **Strategic Classification**, das **Bounded Context** sowie das **Tactical Architecture Game** spielen.
 
-[//]: # ()
-[//]: # (Domain-Driven Design Cards ist ein gemeinschaftliches Projekt mit [nilsbert]&#40;https://github.com/nilsbert&#41;. )
+## Enabling und Enabler Teams
 
-[//]: # (Mit Domain-Driven Design Cards lassen sich das **Context Mapping**, das **Strategic Classification**, )
 
-[//]: # (das **Bounded Context** sowie das **Tactical Architecture Game** spielen.)
+Der Ansatz Team Topologies beschreibt **Enabler-Team**s mit der Aufgabe andere Teams dabei zu unterstützen, ihre Kernaufgaben erfolgreich durchzuführen. 
+Diese Produkt- oder Wertstrom-orientierte Teams (Stream-Aligned Teams), richten ihren Fokus auf die stetige Lieferung von Geschäftswert. Dennoch benötigen auch diese Teams eine Weiterentwicklung in ihrer Arbeitsweise und in ihrer fachlichen Expertise,
+um ihre Leistungsfähigkeit aufrechtzuerhalten oder zu steigern.
 
-[//]: # ()
-[//]: # (## Enabling und Enabler Teams)
+An dieser Stelle wirken Enabler-Teams in Themengebieten die tiefergehende 
+Fachexpertise benötigen, und teilen diese durch temporäre Zusammenarbeit mit Stream-Aligned Teams.
 
-[//]: # ()
-[//]: # (Der Ansatz _Team Topologies_ beschreibt Enabler-Teams mit der Aufgabe andere Teams dabei zu unterstützen, ihren Entwicklungsprozess)
+Beispiele hierfür sind:
 
-[//]: # (effektiv und effizient zu gestalten. Produkt- oder Wertstrom-orientierte Teams &#40;Stream-Aligned Teams&#41;, haben einen Fokus)
+* Aufbau eines Application Performance Monitoring
 
-[//]: # (auf einen stetigen Fortschritt im Ausbau der Software. Enabler-Teams sollen Fokusverlust bei Stream-Aligned Teams)
+* Etablierung des Vorgehen Test-Driven Development
 
-[//]: # (vermeiden, und bei speziellen Themen unterstützen. Mögliche Beispiele hierfür sind:)
+* Aufbau einer modernen Continuous Delivery Pipeline
 
-[//]: # (* Application Performance Monitoring)
+* Etablierung von Behavior-Driven Development
 
-[//]: # (* Test-Driven Development)
+* Coaching und Consulting im Bereich der Application Security
 
-[//]: # (* Continuous Delivery)
+* Coaching und Consulting im Bereich Softwarearchitektur
 
-[//]: # (* Behavior-Driven Development)
+* Initiale Begleitung bei umfangreichen Architekturmodernisierungen
 
-[//]: # (* Application Security)
+* Begleitung bei der Einführung von Domain-Driven Design
 
-[//]: # (* Softwarearchitektur)
+* ...
 
-[//]: # (* Domain-Driven Design)
-
-[//]: # (* Architekturmodernisierung und Refactoring)
-
-[//]: # ()
-[//]: # (Ziel dieser Zusammenarbeit ist es, die Stream-Aligned Teams zu befähigen, ihre Arbeit in der gewünschten Zeit)
-
-[//]: # (als auch nachhaltig in der geforderten Qualität zu leisten.)
-
-[//]: # (Enabler-Teams arbeiten für einen temporären Zeitraum mit Stream-Aligned Teams zusammen. Dieser Zeitraum erstreckt sich)
-
-[//]: # (in der Regel über Wochen bis zu wenigen Monate.)
+**DDD-Cards** ist ein Werkzeug für Enabler-Teams oder andere Personen / Rollen, um bei der Einführung von Domain-Driven Design zu unterstützen.
 
 ## Gamification
 
@@ -68,25 +58,15 @@ dass die Nutzung auch ohne spezielle Expertise möglich ist. Die Spieler/innen w
 durch eine Expert/in in DDD sowie eine Moderator/in unterstützt.
 In Bezug auf den Ansatz Team Topologies wird diese Aufgabe von Enablern übernommen.
 
-## Enabling mittels Gamification
+## Enabling von Domain-Driven Design mittels Domain-Driven Design Cards
 
-Der Prozess des Enabling ist mit sicherlich vielschichtig und komplex. Das Enabling von Softwarearchitektur und
-Domain-Driven Design ist meist verbunden mit Wissensaufbau und intensiver Kollaboration zwischen unterschiedlichen Akteuren.
-Enabler-Teams unterstützen an dieser Stelle als Methoden- und Themenexperten. Moderationsleistung zur Unterstützung kreativer
-und kollaborativer Aktivitäten im Rahmen des Enabling gehört zu den Hauptaufgaben von Enablern.
-In _Team Topologies_ wird dies _Facilitating_ genannt.
-Gamification bereichert den Methodik-Baukasten eines Enabler-Team zur Unterstützung dieser Aktivitäten in spannenden, spaßigen
-und auch zielführenden Workshops.
-
-### Enabling von Domain-Driven Design mittels Domain-Driven Design Cards
-
-Domain-Driven Design Cards sind ein spielerischer Ansatz, um die Prinzipien und Konzepte von Domain-Driven Design
-zu vermitteln und anzuwenden. Dies erfolgt über vier für sich stehende Kartenspiele, die in Summe die wichtigsten Kernelemente
+DDD-Cards sind ein spielerischer Ansatz, um die Prinzipien und Konzepte von Domain-Driven Design
+zu vermitteln und anzuwenden. Dies erfolgt über fünf für sich stehende Spiele, die in Summe die wichtigsten Kernelemente
 von Domain-Driven Design über den gesamten Softwareentwicklungsprozess unterstützen.
 
 > Bounded Context Game
 >
-> Finden und Definieren von Subdomänen und Bounded Contexts auf Basis visualisierten Fachwissen in Collaborative Modeling Workshops, wie z.B. Event Storming oder Domain Story Telling.
+> Definieren von Subdomänen und Bounded Contexts auf Basis visualisierten Fachwissen und DDD Heuristiken.
 
 > Strategic Classification Game
 >
@@ -97,9 +77,13 @@ von Domain-Driven Design über den gesamten Softwareentwicklungsprozess unterst�
 > Finden und Definieren von Abhängigkeiten zwischen Bounded Context auf Basis der Methode Context Mapping.
 
 
-> Tactical Architecture Game
+> Tactical Architecture Game - Architecture Pattern
 >
-> Finden eines gemeinsamen Architekturplans für die Umsetzung von Bounded Contexts auf taktischer Architekturebene.
+> Gemeinsame Entscheidung für ein taktisches Architekturmuster.
+
+> Tactical Architecture Game - Starting Architecture Decisions
+>
+> Finden eines gemeinsamen Architekturplans für die Umsetzung von Bounded Contexts auf taktischer Architekturebene auf Basis von Architecture Decision Records.
 
 Alle Spiele bieten Raum für Kommunikation, Wissensaustausch sowie -aufbau. Dies verspricht gute Entscheidungen
 auf der jeweilige Architekturebene unter Berücksichtigung aller relevanter Perspektiven

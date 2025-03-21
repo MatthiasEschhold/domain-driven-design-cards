@@ -6,16 +6,10 @@
 
 ## Ziel des Spiels
 
-Das Tactical Architecture Game hat das Ziel, grundlegende Architekturentscheidungen zu diskutieren und 
-eine Teamentscheidung im Konsent für jede relevante Fragestellung zu finden. Hierfür stellt das Spiel 
-ein Set an Entscheidungen, sogenannte Enabler Architecture Decisions, eingeteilt in 
+Das Tactical Architecture Game - Starting Architecture Decisions hat das Ziel, 
+grundlegende Architekturentscheidungen zu diskutieren und eine Teamentscheidung im Konsent für jede 
+relevante Fragestellung zu finden. Hierfür stellt das Spiel ein Set an Entscheidungen, die Starting Architecture Decisions, eingeteilt in 
 Entscheidungskategorien, bereit.
-
-Das Tactical Architecture Game kann mit dem Wirkungsbereich bezogen auf einen Bounded Context, 
-ein Entwicklungsteam oder auch eine Gruppe von Entwicklungsteams, die über einen Verbund von Bounded Contexts
-eine gleichartige taktische Architektur erreichen möchten, angewendet werden. Das Spiel adressiert 
-taktisches Domain-Driven Design und domänenzentrierte Architekturmuster, wie z.B. die Clean Architecture,
-Hexagonal Architecture oder Onion Architecture.
 
 ### Die Mission
 
@@ -25,38 +19,32 @@ zu Ende.
 
 ## Spielvorbereitung
 
-Zur Spielvorbereitung gehört die Vorbereitung des Spielfelds in physischer oder digitaler Form. 
-Der Wirkungsbereich ist im Vorfeld zu klären und auf dem Spielfeld zu dokumentieren.
+Zur Spielvorbereitung gehört die Vorbereitung des Spielfelds in physischer oder digitaler Form.
+Weiter benötigt jede Spieler:in ein Kartendeck.
 
-Das Spielfeld enthält Entscheidungskategorien und die Fragestellungen für eine zu treffende Entscheidung. 
-Die Spielkarten beschreiben zum einen die Fragestellung sowie passende Muster und Lösungsstrategien.
+### Miro Board
+
+Coming soon...
 
 ## Spielverlauf
 
-Das Spiel führt die Spieler:innen entlang der Entscheidungskategorien, 
-von innerem _Ring / Hexagon / Onion_ zum äußeren. Für jede Entscheidung startet ein 
-Entscheidungsfindungsprozess zwischen den Spieler:innen. Wechselwirkungen zwischen Entscheidungen 
-sind auf dem Spielfeld angegeben und müssen bei der Entscheidungsfindung ebenfalls berücksichtigt werden.
+Das Spiel führt die Spieler:innen entlang der Entscheidungskategorien. Für jede Entscheidung startet ein 
+Entscheidungsfindungsprozess zwischen den Spieler:innen. Die Abhängigkeit einer Entscheidung zu einer anderen
+sind ebenfalls durch den Spielverlauf berücksichtigt. 
 
-Die Entscheidungskategorien werden in der folgenden Reihenfolge durchlaufen:
+Die Entscheidungskategorien werden entsprechend der beschriebenen Reihenfolge für domänenzentrierte oder
+vertikal geschichtete Architekturmuster werden beschriebenen folgenden Reihenfolge durchlaufen:
 
-1. **Domänenkern**
-2. **Anwendungsfälle**
-3. **Mappings**
-4. **Modularisierung**
-
-Bestandteile des Entscheidungsfindungsprozesses einer taktischen Architekturentscheidung sind:
-
+Die Bestandteile des Entscheidungsfindungsprozesses einer taktischen Architekturentscheidung sind:
 * Austausch über Fragestellung und Lösungsstrategie zur Förderung eines gemeinsamen Verständnisses
 * Austausch über Fragestellung und Lösungsstrategie im spezifischen Projektkontext anhand bekannter 
 Anwendungsfälle und Qualitätsanforderungen
 * Formulierung von Entscheidungsalternativen
 * Finden einer Konsententscheidung im Team
 
-Jede Entscheidung muss innerhalb einer Timebox von 30 Minuten gefunden werden. Von dieser Timebox 
-sind mindestens 10 Minuten für die Formulierung von Entscheidungsalternativen und für das Treffen 
-der Entscheidung zu verwenden. Bei großen Teams kann die Timebox erhöht werden, sollte jedoch als 
-Richtwert 45 Minuten nicht überschreiten.
+Jede Entscheidung muss innerhalb einer Timebox von 45 Minuten gefunden werden. Von dieser Timebox 
+sind mindestens 15 Minuten für die Dokumentation der Architekturentscheidungen, insbesondere hinsichtlich 
+verworfener Alternativen sowie Konsequenzen der Entscheidung.
 
 > Spielfeld
 
