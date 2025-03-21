@@ -1,8 +1,10 @@
-# Wirksames Architecture Enabling und wirksame Architecture Leadership
+# Domain-Driven Design und Softwarearchitektur
 
-- [Software Architecure Enabling](./introduction/introduction-de.md)
+# Enabling Domain-Driven Design und Softwarearchitektur
 
-# Domain Driven Design
+- [Enabling Domain-Driven Design und Softwarearchitektur](./introduction/introduction-de.md)
+
+# Domain-Driven Design
 
 - [Einführung in Domain Driven Design]()
 
