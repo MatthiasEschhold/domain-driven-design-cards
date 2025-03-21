@@ -25,8 +25,8 @@ Durch Grundsatzentscheidungen, wie das Architekturmuster oder die Anwendung des
 taktischen DDD, manifestieren sich weiche Vorgaben (Soft Standard) für die Architektur.
 
 Diese Vorgaben sind für die Implementierungsebene zu Abstrakt, 
-und ohne weitere gemeinsame Entscheidungsfindung eine konsistente Implementierung und die damit
-verbundenen Qualitätsziele Wartbarkeit, Erweiterbarkeit und Flexibilität zu erreichen.
+und ohne weitere gemeinsame Entscheidungsfindung ist die Erreichung einer konsistenten Implementierung und die 
+damit verbundenen Qualitätsziele Wartbarkeit, Erweiterbarkeit und Flexibilität, nicht möglich.
 
 Die unterschiedlichen Ausprägungen des Tactical Architecture Game fördern die
 kollaborative Entscheidungsfindung im Team für die grundlegenden Fragestellungen 1-3.
