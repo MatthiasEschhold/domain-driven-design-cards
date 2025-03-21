@@ -218,3 +218,219 @@ Im Folgenden sind vier Szenarien aufgeführt, die Objekterzeugung in domänenzen
 | 5.3 Constructor           |                  |
 | 5.4 Builder               |                  |
 | 5.5 Joker                 |                  |
+
+# Entscheidungskategorie Anwendungsfälle
+
+@ToDo
+
+> Geschäftsregeln stellen im Kontext der Entscheidungskategorie Anwendungsfälle anwendungsfall-spezifische Regeln dar.
+
+## Einordnung in die domänenzentrischen Architekturmuster
+
+| Architekturmuster      | Betroffener Verantwortungsbereich |
+|------------------------|:----------------------------------|
+| Clean Architecture     | `Use Case Ring`                   |
+| Hexagonal Architecture | `Application Hexagon`             |
+| Onion Architecture     | `Application Onion`               |
+
+## Architekturentscheidung #6: Wie werden Use Cases geschnitten?
+
+### Vorbedingung
+
+Keine
+
+### Entscheidungskontext
+
+Use Cases sind Schnittstellen der fachlichen Applikation und werden aus der Perspektive der Domäne definiert.
+Dabei können verschiedene Heuristiken zum Einsatz kommen, und keine Heuristik ist per se die beste.
+
+Ziel ist es im Team zu definieren, welche Heuristik überwiegend oder in Abhängigkeit eines bestimmten Szenarios
+verwendet werden soll. Diese Szenarien der Anwendung sind auf Basis eines gemeinsamen Verständnisses
+in der Architekturentscheidung zu dokumentieren.
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+- Es entstehen uneinheitliche Varianten der Implementierung und Benennung von Use Cases
+- Dies reduziert die Verständlichkeit und Entwickler/innen ist unklar, welche Implementierungsvariante wann für einen Use Case zu wählen ist
+
+###### Entscheidungsalternativen
+
+| Entscheidungsalternativen | Kurzbeschreibung |
+|---------------------------|:-----------------|
+| 6.1 By Function           |                  |     
+| 6.2 By Command & Query    |                  |
+| 6.3 By (Root) Entity      |                  |
+| 6.4 By Source             |                  |
+| 6.5 By Consumer           |                  |
+| 6.6 Joker                 |                  |
+
+# Entscheidungskategorie Mappings
+
+Die Entscheidungen über den Einsatz von Mapping-Strategien beeinflusst den Kopplungsgrad des Systems im Gesamtbild.
+Mappings können jedoch auch Overhead darstellen, weshalb eine gute Balance abgestimmt auf die Anforderungen notwendig ist.
+
+## Einordnung in die domänenzentrischen Architekturmuster
+
+| Architekturmuster      | Betroffene Verantwortungsbereich Two-Way Mapping | Betroffene Verantwortungsbereich Full Mapping |
+| ---------------------- |:-------------------------------------------------|:----------------------------------------------|
+| Clean Architecture     | `Interface Adapters Ring`                         | `Interface Adapters Ring`<br/>`Use Case Ring` |
+| Hexagonal Architecture | `Adapters Hexagon`                                 | `Adapters Hexagon`<br/>`Application Hexagon`  |
+| Onion Architecture     | `Adapters Onion`                                   | `Adapters Onion`<br/>`Application Onion`      |
+
+## Architekturentscheidung #7: Welche Mapping-Strategie wird als Default-Strategie verwendet und für welche Szenarien eignen sich alternative Strategien?
+
+### Vorbedingung
+
+Keine
+
+### Entscheidungskontext
+
+@ToDo
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+@ToDo
+
+### Entscheidungsalternativen
+
+| Entscheidungsalternativen    | Kurzbeschreibung |
+|------------------------------|:-----------------|
+| 7.1 One-Way Mapping Strategy |                  |     
+| 7.2 Two-Way Mapping Strategy |                  |
+| 7.3 Full Mapping Strategy    |                  |
+| 7.4 No Mapping               |                  |
+| 7.5 Joker                    |                  |
+
+## Architekturentscheidung #8: Wie werden Mappings implementiert?
+
+| Enabling Architecture Decision | Entscheidung                                                     |
+|--------------------------------|:-----------------------------------------------------------------|
+| 7                              | `7.2 Two-Way Mapping Strategy` <br/> `7.3 Full Mapping Strategy` |
+
+### Entscheidungskontext
+
+Für die Two-Way und die Full Mapping Strategie stellt sich die Frage, wie Mappings implementiert werden sollen.
+Eine einheitliche Lösungsstrategie wird empfohlen, um die Komplexität in der Implementierung nicht unnötig zu erhöhen.
+Jede Variante hat Vor- und Nachteile, und letztendlich muss sie auch den Vorlieben des Teams entsprechen.
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+@ToDo
+
+### Entscheidungsalternativen
+
+| Entscheidungsalternativen   | Kurzbeschreibung |
+|-----------------------------|:-----------------|
+| 8.1 Native as adapter logic |                  |     
+| 8.2 Native with a _Mapper_  |                  |
+| 8.3 Third-Party Library     |                  |
+| 8.4 Joker                   |                  |
+
+# Entscheidungskategorie Modularisierung
+
+Starting Architecture Decisions der Entscheidungskategorie Modularisierung haben übergreifenden Charakter
+und gelten in allen domänenzentrischen Architekturmuster auf gleiche Weise.
+
+## Architekturentscheidung #9: Vertikale vs horizontale Schichtung
+
+### Vorbedingung
+
+Keine
+
+### Entscheidungskontext
+
+@ToDo
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+@ToDo
+
+### Entscheidungsalternativen
+
+| Entscheidungsalternativen                | Kurzbeschreibung |
+|------------------------------------------|:-----------------|
+| 9.1 Vertical Layers by Aggregate-Module  |                  |     
+| 9.2 Horizontal Layers by Rings / Hexagon |                  |
+
+## Architekturentscheidung #10: Wie wird Modularisierung umgesetzt?
+
+### Vorbedingung
+
+
+### Entscheidungskontext
+
+@ToDo
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+@ToDo
+
+### Entscheidungsalternativen
+
+| Entscheidungsalternativen | Kurzbeschreibung |
+|---------------------------|:-----------------|
+|                           |                  |     
+|                           |                  |
+
+## Architekturentscheidung #11: Wie werden fachliche Module strukturiert?
+
+### Vorbedingung
+
+| Architecture Decision |                Entscheidung                |
+|-----------------------|:------------------------------------------:|
+| 9                     | `9.1 Vertical Layers by Aggregate-Modules` |
+
+### Entscheidungskontext
+
+Das fachliche Modul wird abgeleitet auf Basis eines _Aggregate_ (_Root Entity_).
+Innerhalb dieses Moduls werden die Verantwortungsbereiche (Ring, Hexagon bzw. Onion) des domänenzentrischen
+Architekturmuster abgebildet. Hierfür gibt es verschiedene Lösungsstrategien, die die architektonischen Elemente mehr
+oder weniger stark zum Ausdruck bringen.
+
+Zur Förderung der Verständlichkeit wird bei Modulen ab mittlerer Größe und Komplexität eine ausdrucksstarke Variante,
+d.h. 11.1 und 11.2, empfohlen.
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+@ToDo
+
+### Entscheidungsalternativen
+
+| Entscheidungsalternativen                 | Kurzbeschreibung |
+|-------------------------------------------|:-----------------|
+| 11.1 Architectural Expressive             |                  |     
+| 11.2 Architectural Expressive Application |                  |
+| 11.3 Rings/Hexagon as Layers              |                  |
+| 11.4 Joker                                |                  |
+
+## Architekturentscheidung #12: Wie wird die Abhängigkeit zwischen zwei Aggregates aufgelöst?
+
+### Vorbedingung
+
+Keine
+
+### Entscheidungskontext
+
+Im taktischen Domain-Driven Design wird eine Entkopplung auf Basis der Grenzen von Aggregates verfolgt.
+Aggregates haben einen unabhängigen Lebenszyklus.
+
+Falls ein fachlicher Zusammenhang hergestellt werden muss, darf ein Aggregate ein anderes Aggregate nur über dessen
+Identität referenzieren. Die Referenz muss zur Laufzeit aufgelöst werden.
+
+Abhängigkeiten dieser Art sind musterartig und gleichartig zu behandeln, um die Komplexität gering zu halten.
+
+Welches Muster als Standard dienen kann und in welchen Szenarien auf alternative Lösungsstrategien zurückgegriffen wird,
+muss als kollaborative Architekturentscheidung im Team getroffen werden.
+
+### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+
+@ToDo
+
+### Entscheidungsalternativen
+
+| Entscheidungsalternativen            | Kurzbeschreibung |
+|--------------------------------------|:-----------------|
+| 12.1 Application Service Pattern     |                  |     
+| 12.2 Adapter-Out Use-Case-In Pattern |                  |
+| 12.3 Events                          |                  |
+| 12.4 Joker                           |                  |

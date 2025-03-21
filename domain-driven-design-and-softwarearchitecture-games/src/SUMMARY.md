@@ -26,6 +26,8 @@
 - [Taktische Architekturentscheidungen als Erfolgsfaktor](../tag/tactical-architecture/tactical-architecture-intro-de.md)
 - [Entscheidung für ein Architekturmuster]()
 - [Starting Architecture Decisions](../tag/tactical-architecture/tactical-architecture-decisions-de.md)
+- [Starting Architeture Decisions für domänenzentrierte Architekturmuster](../tag/tactical-architecture/tactical-architecture-decisions-domaincentric-de.md)
+- [Starting Architeture Decisions für vertikal geschichtete Architekturmuster]()
 
 # Enabling Domain Driven Design mittels Gamification
 
