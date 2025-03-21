@@ -27,10 +27,10 @@
 
 ## Taktische Architekturentscheidungen
 
-- [Taktische Architekturentscheidungen als Erfolgsfaktor](../tag/tactical-architecture/tactical-architecture-intro-de.md)
+- [Taktische Architekturentscheidungen als Erfolgsfaktor](./tag/tactical-architecture/tactical-architecture-intro-de.md)
 - [Entscheidung für ein Architekturmuster]()
-- [Starting Architecture Decisions](../tag/tactical-architecture/tactical-architecture-decisions-de.md)
-- [Starting Architeture Decisions für domänenzentrierte Architekturmuster](../tag/tactical-architecture/tactical-architecture-decisions-domaincentric-de.md)
+- [Starting Architecture Decisions](./tag/tactical-architecture/tactical-architecture-decisions-de.md)
+- [Starting Architeture Decisions für domänenzentrierte Architekturmuster](./tag/tactical-architecture/tactical-architecture-decisions-domaincentric-de.md)
 - [Starting Architeture Decisions für vertikal geschichtete Architekturmuster]()
 
 # Domain-Driven Design Cards Game Collection
