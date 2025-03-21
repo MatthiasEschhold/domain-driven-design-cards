@@ -1,4 +1,8 @@
-# Das Tactical Architecture Game
+# Das Tactical Architecture Game - Starting Architecture Decisions
+
+## Kartendeck
+
+![Overview Card Deck Tactical Architecture Game](../../img/Tactical_Architecture_Game_Cards_Overview.png)
 
 ## Ziel des Spiels
 

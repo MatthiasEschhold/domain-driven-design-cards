@@ -1,5 +1,9 @@
 # Das Strategic Classification Game
 
+## Kartendeck
+
+![Overview Card Deck Strategic Classification Game](../img/Strategic_Classification_Game_Cards_Overview.png)
+
 ## Ziel des Spiels
 
 Das Strategic Classification Game zielt darauf ab, die strategische Klassifikation 

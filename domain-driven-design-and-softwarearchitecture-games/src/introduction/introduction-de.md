@@ -1,63 +1,52 @@
-## Enabling Domain-Driven Design mit Gamification
+# Enabling Domain-Driven Design mit Gamification
 
-Mit Domain-Driven Design Cards bieten wir eine methodische Unterstützung mittels Gamification 
-für strategisches und taktisches Domain-Driven Design an.
+[//]: # (Mit Domain-Driven Design Cards bieten wir eine methodische Unterstützung mittels Gamification )
 
-Domain-Driven Design Cards ist ein gemeinschaftliches Projekt mit [nilsbert](https://github.com/nilsbert). 
-Mit Domain-Driven Design Cards lassen sich das Context Mapping, das Strategic Classification, 
-das Bounded Context sowie das Architecture Game spielen.
+[//]: # (für strategisches und taktisches Domain-Driven Design an.)
 
-## Bounded Context Game
+[//]: # ()
+[//]: # (Domain-Driven Design Cards ist ein gemeinschaftliches Projekt mit [nilsbert]&#40;https://github.com/nilsbert&#41;. )
 
-Identifiziert Subdomänen und Bounded Contexts der Business-Domäne.
+[//]: # (Mit Domain-Driven Design Cards lassen sich das **Context Mapping**, das **Strategic Classification**, )
 
-### Übersicht Kartendeck
+[//]: # (das **Bounded Context** sowie das **Tactical Architecture Game** spielen.)
 
-![Overview Card Deck Bounded Context Game](../img/Bounded_Context_Game_Cards_Overview.png)
+[//]: # ()
+[//]: # (## Enabling und Enabler Teams)
 
-## Context Mapping Game
+[//]: # ()
+[//]: # (Der Ansatz _Team Topologies_ beschreibt Enabler-Teams mit der Aufgabe andere Teams dabei zu unterstützen, ihren Entwicklungsprozess)
 
-Definiert Abhängigkeiten zwischen den Bounded Contexts.
+[//]: # (effektiv und effizient zu gestalten. Produkt- oder Wertstrom-orientierte Teams &#40;Stream-Aligned Teams&#41;, haben einen Fokus)
 
-### Übersicht Kartendeck
+[//]: # (auf einen stetigen Fortschritt im Ausbau der Software. Enabler-Teams sollen Fokusverlust bei Stream-Aligned Teams)
 
-![Overview Card Deck Context Mapping Game](../img/Context_Mapping_Game_Cards_Overview.png)
+[//]: # (vermeiden, und bei speziellen Themen unterstützen. Mögliche Beispiele hierfür sind:)
 
-## Strategic Classification Game
+[//]: # (* Application Performance Monitoring)
 
-Ermittelt die strategische Bedeutung von Subdomänen und Bounded Contexts.
+[//]: # (* Test-Driven Development)
 
-### Übersicht Kartendeck
+[//]: # (* Continuous Delivery)
 
-![Overview Card Deck Strategic Classification Game](../img/Strategic_Classification_Game_Cards_Overview.png)
+[//]: # (* Behavior-Driven Development)
 
-## Tactical Architecture Game
+[//]: # (* Application Security)
 
-Definiert gemeinsam einen Konstruktionsplan für die taktische Architektur.
+[//]: # (* Softwarearchitektur)
 
-### Übersicht Kartendeck
+[//]: # (* Domain-Driven Design)
 
-![Overview Card Deck Tactical Architecture Game](../img/Tactical_Architecture_Game_Cards_Overview.png)
+[//]: # (* Architekturmodernisierung und Refactoring)
 
-## Enabling und Enabler Teams
+[//]: # ()
+[//]: # (Ziel dieser Zusammenarbeit ist es, die Stream-Aligned Teams zu befähigen, ihre Arbeit in der gewünschten Zeit)
 
-Der Ansatz _Team Topologies_ beschreibt Enabler-Teams mit der Aufgabe andere Teams dabei zu unterstützen, ihren Entwicklungsprozess
-effektiv und effizient zu gestalten. Produkt- oder Wertstrom-orientierte Teams (Stream-Aligned Teams), haben einen Fokus
-auf einen stetigen Fortschritt im Ausbau der Software. Enabler-Teams sollen Fokusverlust bei Stream-Aligned Teams
-vermeiden, und bei speziellen Themen unterstützen. Mögliche Beispiele hierfür sind:
-* Application Performance Monitoring
-* Test-Driven Development
-* Continuous Delivery
-* Behavior-Driven Development
-* Application Security
-* Softwarearchitektur
-* Domain-Driven Design
-* Architekturmodernisierung und Refactoring
+[//]: # (als auch nachhaltig in der geforderten Qualität zu leisten.)
 
-Ziel dieser Zusammenarbeit ist es, die Stream-Aligned Teams zu befähigen, ihre Arbeit in der gewünschten Zeit
-als auch nachhaltig in geforderter Qualität zu erledigen.
-Enabler-Teams arbeiten für einen temporären Zeitraum mit Stream-Aligned Teams zusammen. Dieser Zeitraum erstreckt sich
-in der Regel über Wochen bis zu wenigen Monate.
+[//]: # (Enabler-Teams arbeiten für einen temporären Zeitraum mit Stream-Aligned Teams zusammen. Dieser Zeitraum erstreckt sich)
+
+[//]: # (in der Regel über Wochen bis zu wenigen Monate.)
 
 ## Gamification
 
@@ -116,16 +105,17 @@ Alle Spiele bieten Raum für Kommunikation, Wissensaustausch sowie -aufbau. Dies
 auf der jeweilige Architekturebene unter Berücksichtigung aller relevanter Perspektiven
 und fördert eine Team-Vision und ein Wir-Gefühl.
 
-### Domain-Driven Design Cards im Starter Modeling Process
+[//]: # (## Kollaborative Entscheidungsfindung)
 
-@ToDo
+[//]: # ()
+[//]: # (@ToDo: Beschreibung kollaborative Entscheidungsfindung)
 
-## Kollaborative Entscheidungsfindung
+[//]: # ()
+[//]: # (#### Konzens- und Konsent-Methoden)
 
-@ToDo: Beschreibung kollaborative Entscheidungsfindung
+[//]: # ()
+[//]: # (Entscheidungsfindung im Team unterstützen ergänzend Methoden, wie z.B. Dot-Voting oder Thumb-Voting.)
 
-#### Konzens- und Konsent-Methoden
+[//]: # (Für Thumb-Voting können die Spiele mit [unFix Decision Patterns]&#40;https://unfix.com/decision-patterns&#41; ergänzt werden.)
 
-Entscheidungsfindung im Team unterstützen ergänzend Methoden, wie z.B. Dot-Voting oder Thumb-Voting.
-Für Thumb-Voting können die Spiele mit [unFix Decision Patterns](https://unfix.com/decision-patterns) ergänzt werden.
-Dot-Voting ist sowohl vor Ort mit Stift oder Klebepunkten als auch remote auf einem Collaboration Board einfach durchführbar.
+[//]: # (Dot-Voting ist sowohl vor Ort mit Stift oder Klebepunkten als auch remote auf einem Collaboration Board einfach durchführbar.)

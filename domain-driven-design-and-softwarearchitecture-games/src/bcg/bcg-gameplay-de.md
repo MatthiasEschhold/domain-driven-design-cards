@@ -1,5 +1,9 @@
 # Das Bounded Context Game
 
+## Kartendeck
+
+![Overview Card Deck Bounded Context Game](../img/Bounded_Context_Game_Cards_Overview.png)
+
 ## Ziel des Spiels
 
 Das Ziel des Bounded Context Game ist es, Bounded Context-Kandidaten anhand bekannter 

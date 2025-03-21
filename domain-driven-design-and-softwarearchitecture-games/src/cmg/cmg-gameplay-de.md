@@ -1,5 +1,9 @@
 # Das Context Mapping Game
 
+## Kartendeck
+
+![Overview Card Deck Context Mapping Game](../img/Context_Mapping_Game_Cards_Overview.png)
+
 ## Ziel des Spiels
 
 Das Context Mapping Game hat das Ziel, Abhängigkeiten zwischen Bounded Contexts unter 
