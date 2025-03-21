@@ -1,5 +1,9 @@
 # Domain-Driven Design und Softwarearchitektur
 
+# Autoren
+
+- [Autoren](./author/author.md)
+
 # Enabling Domain-Driven Design und Softwarearchitektur
 
 - [Enabling Domain-Driven Design und Softwarearchitektur](./introduction/introduction-de.md)
