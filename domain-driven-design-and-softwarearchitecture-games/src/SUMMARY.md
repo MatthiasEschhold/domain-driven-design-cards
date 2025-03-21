@@ -38,5 +38,5 @@
 - [Bounded Context Game](./bcg/bcg-gameplay-de.md)
 - [Context Mapping Game](./cmg/cmg-gameplay-de.md)
 - [Strategic Classification Game](./scg/scg-gameplay-de.md)
-- [Tactical Architecture Game Starting Architecture Decisions](./tag/tag-cp-game/tag-gameplay-ap-de.md)
+- [Tactical Architecture Game Architecture Pattern](./tag/tag-cp-game/tag-gameplay-ap-de.md)
 - [Tactical Architecture Game Starting Architecture Decisions](./tag/tag-cp-game/tag-gameplay-sad-de.md)
