@@ -1,12 +1,12 @@
 # Domain-Driven Design und Softwarearchitektur
 
-# Enabling Domain-Driven Design und Softwarearchitektur
+# Enable Domain-Driven Design und Softwarearchitektur
 
 - [Autoren](./author/author.md)
 
-# Enabling Domain-Driven Design und Softwarearchitektur
+# Enable Domain-Driven Design und Softwarearchitektur
 
-- [Enabling Domain-Driven Design und Softwarearchitektur](./introduction/introduction-de.md)
+- [Enable Domain-Driven Design und Softwarearchitektur mit Gamification](./introduction/introduction-de.md)
 
 # Domain-Driven Design
 
