@@ -13,7 +13,7 @@ You will find a detailed description in both **_ENGLISH_** and **_GERMAN_** belo
 
 Domain-Driven Design Cards offer valuable methodological support for a range of strategic and 
 tactical Domain-Driven Design workshops, and they're available for free. This initiative is a collaborative 
-project with [nilsbert](https://github.com/nilsbert). For more information about us, you can explore the [website](www.architecture-enablers.de).
+project with [nilsbert](https://github.com/nilsbert). For more information about us, you can explore the [website](http://www.architecture-enablers.de).
 
 With Domain-Driven Design Cards, you can engage in activities such as the Context Mapping Game, 
 the Strategic Classification Game, the Bounded Context Game, and the Architecture Game. If you're looking for a comprehensive guide 
