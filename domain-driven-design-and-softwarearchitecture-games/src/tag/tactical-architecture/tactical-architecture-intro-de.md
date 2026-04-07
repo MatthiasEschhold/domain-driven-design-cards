@@ -7,7 +7,7 @@
 Die Summe an Architekturentscheidungen prägen die Architektur eines Systems. Implizit und nicht kommunizierte 
 Architekturentscheidungen haben oft eine negative Auswirkung auf die Qualität des Systems. 
 Bewusst getroffene Entscheidungen im Entwicklungsteam sind jedoch ein mächtiges Mittel um Lösungsstrategien im Team
-konsistenz und nachhaltig anzuwenden.
+konsistent und nachhaltig anzuwenden.
 
 Der Aspekt des Enabling bezieht sich an dieser Stelle darauf, dass dem Team Wissen, Rahmen und Raum für gemeinsame
 Architekturentscheidungen bereitgestellt wird. Das Ziel im Hinblick auf das Tactical Architecture Game eine breite 
@@ -24,7 +24,7 @@ Der folgende Abschnitt beschreibt drei fundamentale Fragen, die ein Team in Form
 Durch Grundsatzentscheidungen, wie das Architekturmuster oder die Anwendung des
 taktischen DDD, manifestieren sich weiche Vorgaben (Soft Standard) für die Architektur.
 
-Diese Vorgaben sind für die Implementierungsebene zu Abstrakt, 
+Diese Vorgaben sind für die Implementierungsebene zu abstrakt, 
 und ohne weitere gemeinsame Entscheidungsfindung ist die Erreichung einer konsistenten Implementierung und die 
 damit verbundenen Qualitätsziele Wartbarkeit, Erweiterbarkeit und Flexibilität, nicht möglich.
 
