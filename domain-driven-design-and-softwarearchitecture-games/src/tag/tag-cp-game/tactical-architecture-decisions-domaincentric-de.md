@@ -1,9 +1,24 @@
-# Entscheidungskategorie Domänenkern
+# Spielvariante - Starting Architecture Decision für domänenzentrierte Architekturmuster
 
-Der Domänenkern beschreibt den fachlichen Kern des Systems im Inneren der domänenzentrierten
-Architekturmodelle und besteht aus **Domänenmodell**, **-logik** sowie **-regeln**.
+Diese Beschreibung dient der Detaillierung der Spielvariante für des Tactical Architecture Game Starting Architecture Decisions für 
+domänen-zentrierte Architekturmuster. 
 
-## Einordnung in die domänenzentrischen Architekturmuster
+Im Folgenden werden die Entscheidungskategorien beschrieben, die in dieser Reihenfolge im Spiel durchlaufen werden.
+Zur Abbildung auf das konkrete verwendete Architekturmuster, dient eine Einordnung der Entscheidungskategorie
+in das jeweilige Architekturmodell. 
+
+Als Soft Standards werden Muster und Prinzipien aufgeführt, die durch grundsätzlichen
+Entscheidungen für DDD und das konkrete Architekturmuster vorgegeben sind. Eine Architekturentscheidung
+enthält zudem eine Vorbedingung, die erfüllt sein muss, damit die Entscheidung getroffen werden kann. Eine Vorbedingung
+entspricht einer Abhängigkeit zu einer anderen Architekturentscheidung.
+
+## 1 Entscheidungskategorie Domänenmodell
+
+Das Domänenmodell wird im inneren Kern des domänen-zentrierten Architekturmodells verortet 
+und besteht aus **Entities, Value Objects** und "Domain Servies", die **Eigenschaften**, **Verhalten** sowie **Regeln**
+abbilden.
+
+### Einordnung in die Architekturmodelle
 
 | Architekturmuster      | Betroffener Verantwortungsbereich           |
 | ---------------------- |:--------------------------------------------|
@@ -11,73 +26,77 @@ Architekturmodelle und besteht aus **Domänenmodell**, **-logik** sowie **-regel
 | Hexagonal Architecture | `Domain Hexagon`                            |
 | Onion Architecture     | `Domain Service Onion` </br> `Domain Onion` |
 
-## Architekturentscheidung #1: Nach welchem Prinzip wird das Domänenmodell implementiert?
+### Architekturentscheidung #1: Nach welchem Prinzip wird das Domänenmodell implementiert?
 
-### Vorbedingung
+#### Vorbedingung
 
 Keine
 
-### Soft Standard
+#### Soft Standard
 
-Mit der Entscheidung für DDD wird das Ziel verfolgt, ein Domänenmodell zu implementieren. Dabei ist
-das **Aggregate**, **Entity** und **Value Object** Muster zu verwenden. 
+- Mustersprache des taktischen DDD wird angewendet
+- Aggregate Design Regeln werden beachtet
 
-### Entscheidungskontext
+#### Entscheidungskontext
 
 Für die Implementierung eines Domänenmodells muss die Grundsatzentscheidung zwischen dem 
 _Rich Domain Model_ (1.1) und dem _Anemic Domain Model_ (1.2) getroffen werden. 
 
 Diese Entscheidung legt fest, wie das Domänenmodell implementiert wird und an welchen 
-Stellen Geschäftslogik und -regeln verortet werden.
+Stellen Domänenlogik und -regeln verortet werden.
 
-Das _Rich Domain Model_ besagt, dass die Fachlogik im Domänenobjekt (_Aggregate_, _Entity_, _Value Object_) 
-implementiert wird. Dadurch wird eine ausdrucksstarke Benennung der Methoden ermöglicht, die auf der 
-Fachlichkeit basiert (im vgl. zu set-Methoden). Eine spezielle Form des Verhaltens findet sich in der 
-implementierung von Domänenobjekt-bezogenen Geschäftsregeln.
+Das _Rich Domain Model_ besagt, dass die Fachlogik im Domänenobjekt 
+(_Root Entity_, _Entity_, _Value Object_) implementiert wird. Dadurch wird eine 
+ausdrucksstarke Benennung der Methoden ermöglicht, die auf der Fachlichkeit basiert 
+(im vgl. zu set- und get-Methoden). Eine spezielle Form des Verhaltens findet sich in der 
+implementierung von Domänenobjekt-bezogenen Regeln (_Invarianten_).
 
-Ein _Anemic Domain Model_ enthält nur die Eigenschaften sowie dazugehörige getter und setter. 
-Fachlogik und Validierung werden ausschließlich in _Domain Services_ implementiert. 
-Das _Anemic Domain Model_ gilt auch als Anti-Pattern, da dies oft zu einem Verlust der Fachsprache im Modell
-und zu unnötige Komplexität führt im vgl. dazu die Fachlichkeit im Modell abzubilden.
+Ein _Anemic Domain Model_ enthält nur die Eigenschaften sowie dazugehörige getter und 
+setter. Fachlogik und Validierung werden ausschließlich in _Domain Services_ implementiert. 
+Das _Anemic Domain Model_ gilt auch als Anti-Pattern, da dies oft zu einem Verlust der 
+Fachsprache im Modell und zu unnötiger Komplexität führt.
 
-Der Mittelweg stellt das _Moderately Rich Domain Model_ (1.3) dar. Hier werden Daten und Geschäftsregeln im Objekt gekapselt, 
-weitere Fachlogik wird in _Domain Services_ ausgelagert.
+Der Mittelweg stellt das _Moderately Rich Domain Model_ (1.3) dar. Hier werden Daten und 
+Geschäftsregeln im Objekt gekapselt, weitere Fachlogik wird in _Domain Services_ 
+ausgelagert.
 
-### Risiko wenn diese Entscheidung nicht aktiv getroffen wird
+#### Risiko wenn diese Entscheidung nicht aktiv getroffen wird
 
-- Es entstehen uneinheitliche Implementierungen des Domänenmodells
-- Die Fachlichkeit wird nicht ausreichend im Modell abgebildet und unnötige technische Komplexität entsteht
+**Konzeptionelle Integrität** und frühe **fachliche Erosion**:
 
-### Entscheidungsalternativen
+Es entstehen uneinheitliche Implementierungen des Domänenmodells – insbesondere im Hinblick auf Verhalten und fachliche Regeln.
+Dies verringert die Verständlichkeit und die Ausdrucksstärke, mit der die Fachlichkeit im Code abgebildet wird.
+Mit der Zeit wird für Entwickler:innen unklar, welche Implementierungsvariante für ein Domänenobjekt in welchem Kontext richtig ist.
+
+#### Entscheidungsalternativen
 
 | Entscheidungsalternativen        | Kurzbeschreibung                                                            | 
 |----------------------------------|:----------------------------------------------------------------------------|
-| 1.1 Rich Domain Model            | Das Domänenobjekt enthält:<br/>1) Daten<br/>2) Geschäftsregeln<br/>3) Verhalten |
-| 1.2 Moderately Rich Domain Model | Das Domänenobjekt enthält:<br/>1) Daten<br/>2) Geschäftsregeln                  |
-| 1.3 Anemic Domain Model          | Das Domänenobjekt enthält ausschließlich Daten                              |
+| 1.1 Rich Domain Model            | Das Domänenobjekt enthält:<br/>1) Daten<br/>2) Invarianten<br/>3) Verhalten |
+| 1.2 Moderately Rich Domain Model | Das Domänenobjekt enthält:<br/>1) Daten<br/>2) Invarianten                  |
+| 1.3 Anemic Domain Model          | Das Domänenobjekt enthält ausschließlich Daten.                             |
 
-## Architekturentscheidung #2: Wie soll das Value Object Muster in der Implementierung angewendet werden?
+### Architekturentscheidung #2: Wie soll das Value Object Muster in der Implementierung angewendet werden?
 
-### Vorbedingung
+#### Vorbedingung
 
 | Architecture Decision | Entscheidung                                                     |
 |-----------------------|:-----------------------------------------------------------------|
 | 1                     | `1.1 Rich Domain Model` <br/> `1.2 Moderately Rich Domain Model` |
 
 > **Annahme**<br/>
-> Wird eine 1.3 _Anemic Domain Model_ eingesetzt, wird die Implementierung von _Value Objects_ 
-> als nicht wertstiftend angesehen. Die Entscheidung #2 muss in diesem Fall nicht 
-> getroffen werden.  
+Wird ein _Anemic Domain Model (1.3)_ eingesetzt, wird die Implementierung von Value Objects als nicht sinnvoll erachtet, da diese weder eigenes Verhalten noch Validierungslogik enthalten würden.
+In diesem Fall ist die Entscheidung _#2_ nicht relevant. 
 
-### Entscheidungskontext
+#### Entscheidungskontext
 
 Wird dem _Rich_ oder dem _Moderately Rich Domain Model_ gefolgt, entsteht in Teams i.d.R. die Frage, 
 ob jeder Fachwert als _Value Object_ implementiert werden soll, denn in einem komplexen _Aggregate_ 
 können potenziell viele _Value Objects_ entstehen.
 
-In der Literatur gibt es auf deiner eine Seite die Empfehlung einen fachlichen Wert immer als _Value Object_ zu implementieren. 
-Auf der anderen Seite existiert ein großen vielfalt von unterschiedlichen Implementierungsbeispiele von Value Objects.
-Wird diese Aussage mit den Codebeispielen in Verbindung gebracht, wird deutlich, dass die Empfehlung nicht bedeutet, 
+In der Literatur gibt es auf deiner einen Seite die Empfehlung einen fachlichen Wert immer als _Value Object_ zu implementieren. 
+Auf der anderen Seite existiert eine vielfalt unterschiedlicher Implementierungsbeispiele.
+Wird diese Empfehlung mit den Codebeispielen kombiniert, folgt die Erkenntnis, dass die Empfehlung nicht bedeutet, 
 dass keine primitiven Datentypen mehr verwendet werden dürfen.
 
 Dennoch ist das, das eine extrem der Entscheidung: _Jeder Fachwert wird mittels Value Object Muster implementiert._ (2.1) 
@@ -88,60 +107,66 @@ Ein Value Object wird angewendet mit den Zielen,
 - Die Seiteneffektfreiheit durch die Eigenschaft der Immutabilität, insbesondere bei Paralellität, zu erhöhen
 
 Es gibt jedoch auch Fälle, in denen die Implementierung eines Fachwertes als _Value Object_ nicht notwendig ist.
-Dies ist dann der Fall, wenn die fachliche Typisierung und Selbst-Validierung und die Kapselung von
-Fachlogik nicht notwendig ist. 
+Dies ist dann der Fall, wenn die Selbst-Validierung und die Kapselung von Verhalten nicht notwendig ist. 
 Ein pragmatischer Ansatz, _Value Objects nur zu verwenden, wenn diese Eigenschaften notwendig sind_ (2.2), ist valide und 
 in Abhängigkeit der konkreten fachlichen Anforderungen zu betrachten.
 
 Auf _Value Objects zu verzichten und ausschließlich primitive Datentypen zu verwenden_ (2.3),
 ist ebenfalls eine Möglichkeit, wird jedoch in der DDD-Community als Anti-Pattern bewertet. 
-Dies ist insbesondere bei komplexen _Aggregates_ mit viel und/oder komplexen Geschäftsregeln und Logik der Fall, 
-dann dies dann vollständig im _Aggregate_ oder in einer _Entity_ implementiert werden muss.
+Dies führt insbesondere bei größeren _Aggregates_ mit komplexen Verhalten und Invarianten zu unnötiger Komplexität und 
+erschwerter Lesbarkeit des Codes.
 
-### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+#### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
 
-- Es entstehen uneinheitliche Implementierungen der Fachwerte und in der Konsequenz auch die Prüfung von Geschäftsregeln
-- Es entstehen widersprüchlich Implementierungsvarianten und die Verständlichkeit des Codes wird erschwert
-- Entwickler/innen ist unklar, welche Implementierungsvariante wann für einen Fachwert zu wählen ist
+**Konzeptionelle Integrität** und frühe **fachliche Erosion**:
 
-### Entscheidungsalternativen
+Es entstehen uneinheitliche Implementierungen des Domänenmodells, da keine klare Implementierungstaktik für _Value Object_ 
+festgelegt ist, und jede Entwickler/in die Abbildung nach individuellem Verständnisses implementiert.
 
-| Entscheidungsalternativen                   | Kurzbeschreibung                                                                                                                        |
-|---------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| 2.1 Use always value object pattern         | Jeder fachliche Wert wird als _Value Object_ implementiert.                                                                             |     
-| 2.2 Conditional use of value object pattern | Nur fachliche Werte, die Logik oder Geschäftsregeln enthalten, werden als _Value Object_ implementiert.                                 |  
-| 2.3 No usage of value object pattern        | Jeder fachliche Wert wird als primitiver Datentyp implementiert. Logik und Geschäftsregeln werden in der _(Root) Entity_ implementiert. |       
+Widersprüchliche Implementierungsvarianten erschweren die Verständlichkeit des Codes und Entwickler/innen ist unklar, 
+welche Implementierungsvariante wann für einen Fachwert zu wählen ist.
 
-## Architekturentscheidung #3: Wie wird die fachliche Konsistenz bei Verwendung des Anemic Domain Model gesichert?
+#### Entscheidungsalternativen
 
-### Vorbedingung
+| Entscheidungsalternativen            | Kurzbeschreibung                                                                                                                        |
+|--------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
+| 2.1 Always use value objects         | Jeder fachliche Wert wird als _Value Object_ implementiert.                                                                             |     
+| 2.2 Conditional use of value objects | Nur fachliche Werte, die Verhalten oder Invarianten enthalten, werden als _Value Object_ implementiert.                                 |  
+| 2.3 Always use primitive types       | Jeder fachliche Wert wird als primitiver Datentyp implementiert. Verhalten und Invarianten werden in der _(Root) Entity_ implementiert. |       
+
+### Architekturentscheidung #3: Wie wird die fachliche Konsistenz bei Verwendung des Anemic Domain Model gesichert?
+
+#### Vorbedingung
 
 | Architecture Decision | Entscheidung              |
 |-----------------------|:--------------------------|
 | 1                     | `1.3 Anemic Domain Model` |
 
-### Entscheidungskontext
+#### Entscheidungskontext
 
-Wird das _Anemic Domain Model_ angewendet, muss für die Invarianten und Verhalten ein anderes Element 
-als die Domänenobjekte selbst gefunden werden. Eine Möglichkeit hierfür ist der _Domain Service_ (3.1), jedoch 
-würde dies dazu führen, dass die Verantwortung für Fachlogik und fachliche Validierung in einem Muster 
-verortet wird. Bei erhöhter fachlicher Komplexität, empfiehlt sich daher die Einführung eines 
-neuen Elements in der Mustersprache, wie z.B. ein _Validator_ (3.2).
+Wird das _Anemic Domain Model_ angewendet, muss für Verhalten und Invarianten ein anderes Muster für die Programmierung 
+gefunden werden. Eine Möglichkeit hierfür ist der _Domain Service_ (3.1), jedoch würde dies dazu führen, 
+dass die Verantwortung für Fachlogik und fachliche Validierung in einem Muster verortet wird. 
+Bei erhöhter fachlicher Komplexität, empfiehlt sich daher die Einführung eines neuen Elements in der Mustersprache, wie z.B. ein _Validator_ (3.2).
 
-### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
+#### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
 
-- Es entstehen uneinheitliche Implementierungen der Fachwerte und in der Konsequenz auch die Prüfung von Geschäftsregeln
-- Dies reduziert die Verständlichkeit und Entwickler/innen ist unklar, welche Implementierungsvariante wann für einen Fachwert zu wählen ist
+**Konzeptionelle Integrität**:
 
-### Entscheidungsalternativen
+Es entstehen uneinheitliche Implementierungen von fachlicher Validierung und Logik, welche langfristig
+in der Codebasis zu Widersprüchen führt.
 
-| Entscheidungsalternativen | Kurzbeschreibung                                                                                                                 |
-|---------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
-| 3.1                       | Domänenobjekt-bezogene Geschäftsregeln und Logik werden _Domain Services_ implementiert.                                         |     
-| 3.2                       | Domänenobjekt-bezogene Geschäftsregeln wird in _Validators_ und Domänenobjekt-bezogene Logik in _Domain Services_ implementiert. |
+Dies reduziert die Verständlichkeit und Entwickler/innen ist unklar, welche Implementierungsvariante wann für einen Fachwert zu wählen ist
 
+#### Entscheidungsalternativen
 
-## Architekturentscheidung #4: Wie werden Domänenobjekt-bezogene Geschäftsregeln implementiert?
+| Entscheidungsalternativen      | Kurzbeschreibung                                                                                                               |
+|--------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
+| 3.1 Domain Service             | Verhalten und Invarianten von Domänenobjekten werden in _Domain Services_ implementiert.                                       |     
+| 3.2 Domain Service & Validator | Domänenobjekt-bezogene Regeln werden in einem _Validator_ und Domänenobjekt-bezogene Logik in _Domain Services_ implementiert. |
+| 3.3 Individual Concept         |  |
+
+## Architekturentscheidung #4: Wie werden Invarianten und Regeln implementiert?
 
 ### Vorbedingung
 
@@ -149,17 +174,18 @@ Keine
 
 ### Entscheidungskontext
 
-Unabhängig davon, in welchem Element der Mustersprache die Implementierung von Geschäftsregeln verortet wird,
+Unabhängig davon, in welchem Element der Mustersprache die Invarianten und Regeln implementiert werden,
 stellt sich die Frage wie die Implementierung erfolgen soll.
 
-Eine Möglichkeit ist die Implementierung der Geschäftsregeln _nativ mit den Mitteln der genutzten Programmiersprache_ (4.1).
+Eine Möglichkeit ist die Implementierung der Geschäftsregeln _nativ mit den Mitteln der Programmiersprache_ (4.1).
 
 Eine weitere Möglichkeit ist die Implementierung mit einer _proprietären Abstraktion zur Wiederverwendung von Validierungsregeln_ (4.2).
-Diese Abstraktion koppelt auf lange Sicht, fachliche Komponenten des Systems und sollte daher mit Bedacht eingesetzt werden.
+Abstraktionen dieser Art führen zu einer indirekten Kopplung zwischen den nutzenden Komponenten, wie z.B. Aggregates. Dies sollte
+dann stets im Auge behalten werden.
 
 Eine dritte Möglichkeit ist der Einsatz einer _Third-Party Library_ (4.3), die Out-of-the-Box Validierungsregeln enthält.
-Dies kann die Implementierung von Geschäftsregeln beschleunigen. Jedoch sollte die Abhängigkeit zur Library hinsichtlich
-Funktionsumfang, Stabilität, Erweiterbarkeit und Einfachheit bewertet werden.
+Dies kann die Implementierung von Geschäftsregeln beschleunigen. Jedoch sollte die Bibliothek hinsichtlich
+Funktionsumfang, Stabilität, Einfachheit in Verwendung und Erweiterbarkeit bewertet werden.
 
 ### Risiko, wenn diese Entscheidung nicht aktiv getroffen wird
 
@@ -177,7 +203,7 @@ Funktionsumfang, Stabilität, Erweiterbarkeit und Einfachheit bewertet werden.
 | 4.3 Third-Party Library   | Einsatz einer Third-Party Library die Out-of-the-Box Validierungsregeln enthält.                       |
 
 
-## Architekturentscheidung #5: Welche Strategie der Objekterzeugung, wird für komplexe Fachobjekte verwendet?
+## Architekturentscheidung #5: Welches Muster der Objekterzeugung, wird für Fachobjekte verwendet?
 
 ### Vorbedingung
 
@@ -189,27 +215,28 @@ Die Mustersprache des taktischen Designs beschreibt die _Factory_ (5.1), die die
 wenn dies nicht mehr durch einen einfachen Konstruktor (5.4) am Objekt selbst möglich ist.
 
 Als Ergänzung oder Alternative zur _Factory_ kann das _Builder-Pattern_ (5.2) eingesetzt werden. Als Ergänzung bzw. Alternative zum Konstruktor, 
-ist _Static Factory Method Pattern_ (5.3) zielführend.
+ist das _Static Factory Method Pattern_ (5.3) zielführend.
 
 In der Regel gibt es nicht den einen Erzeugungsprozess für Domänenobjekte. Folglich ist die Kombination der 
 Lösungsstrategien für jeweilige passende Einsatzszenarien ein guter Weg. Wann welche Muster eingesetzt wird, sollte basierend auf einem 
-gemeinsamen Verständnis in der Architekturentscheidung festgehalten werden.
+gemeinsamen Verständnis in der Architekturentscheidung festgehalten werden. Der Einsatz mehrer Muster kann Abhängig von
+gleichartigen Szenarien sinnvoll sein. So kann für einfache Objekterzeugung der Konstruktor (5.4) verwendet werden, 
+während für komplexe Objekte eine _Factory_ (5.1) zum Einsatz kommt.
 
 **Szenarien**
 
-Im Folgenden sind vier Szenarien aufgeführt, die Objekterzeugung in domänenzentrischen Architekturmuster bedingen.
+Im Folgenden sind vier beispielhafte Szenarien aufgeführt, die Objekterzeugung in domänenzentrischen Architekturmuster bedingen:
 
-1. Ein User führt Anwendungsfälle aus, bei denen das Domänenobjekt erzeugt werden muss
-2. Der Zustand eines Domänenobjektes muss aus dem Speicher gelesen werden
-3. Der Zustand eines Domänenobjektes ergibt sich aus unterschiedlichen Quellen (z.B. Speicher und externer Service)
-4. Die Geschäftslogik bedingt die (Neu-)Erzeugung von Domänenobjekten als Bestandteil der Kontrollfluss der Domänenlogik
+1. Der Zustand eines Domänenobjektes muss aus dem Speicher gelesen werden
+2. Der Zustand eines Domänenobjektes ergibt sich aus unterschiedlichen Quellen (z.B. Speicher und externer Service)
+3. Der Kontrollfluss von Anwendungsfällen bedingt die Erzeugung von Domänenobjekten als einen Bestandteil des Ablaufs
 
 ### Risiko
 
 - Eine uneinheitliche und potenziell widersprüchliche Verwendung der Erzeugungsmuster erhöht die strukturelle Komplexität
 - Dies reduziert die Verständlichkeit und Entwickler/innen ist unklar, welches Erzeugungsmuster für einen Fachwert zu wählen ist, was zu weiteren Abweichungen und Varianten führt
 
-### Entscheidungsalternativen
+### Entscheidungsalternativen - MARKER START HERE NEXT TIME
 
 | Entscheidungsalternativen | Kurzbeschreibung |
 |---------------------------|:-----------------|
@@ -217,7 +244,6 @@ Im Folgenden sind vier Szenarien aufgeführt, die Objekterzeugung in domänenzen
 | 5.2 Static Factory Method |                  |
 | 5.3 Constructor           |                  |
 | 5.4 Builder               |                  |
-| 5.5 Joker                 |                  |
 
 # Entscheidungskategorie Anwendungsfälle
 

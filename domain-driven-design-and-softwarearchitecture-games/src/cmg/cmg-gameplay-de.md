@@ -17,8 +17,14 @@ zu gestalten.
 ### Die Mission
 
 Die Definition der Abhängigkeiten zwischen zwei Bounded Contexts anhand der Context Mapping Patterns 
-von Domain-Driven Design stellt eine Mission des Teams dar. Das Spiel endet, sobald alle Missionen 
+von DDD stellt eine Mission des Teams dar. Das Spiel endet, sobald alle Missionen 
 abgeschlossen sind. Dies bedeutet, dass alle Abhängigkeiten zwischen Bounded Contexts definiert wurden.
+
+Für die Definition der Abhängigkeiten zwischen zwei Bounded Contexts werden 
+* **Rollenkarte** (Upstream und Downstream) und
+* **Musterkarte** (Context Mapping Pattern je Rolle) 
+
+eingesetzt.
 
 ## Spielvorbereitung
 
@@ -28,19 +34,13 @@ Die befüllten Bounded Context Canvas werden physisch oder digital als Spielfeld
 Sind Subdomänen bekannt, empfiehlt sich, Bounded Contexts der gleichen Subdomäne gruppiert 
 auf dem Spielfeld darzustellen.
 
-## Spielverlauf
+## Spielablauf
 
-> 1. Dependency Storming (10 bis 20 Minuten)
+> 1. Dependency Storming (20 Minuten)
 
 Im ersten Schritt des Context Mapping Game entscheidet sich das Team für die erste Mission, 
-d.h. für einen zu betrachtenden Bounded Context. Die Mission beginnt mit 10 Minuten Brainstorming 
-von Abhängigkeiten für den Bounded Context (Dependency Storming). Eine Abhängigkeit wird als
-* Command,
-* Query,
-* Event,
-* (Sub-)System oder
-* Akteur
-
+d.h. für einen zu betrachtenden Bounded Context. Die Mission beginnt mit 10 Minuten Brainstorming, jeder für sich,  
+von Abhängigkeiten des Bounded Context. Eine Abhängigkeit wird als Bounded Context, Service, System oder Akteur 
 zum Ausdruck gebracht.
 
 Die Abhängigkeiten wird als ein- bzw. ausgehenden Abhängigkeiten kategorisiert 
@@ -49,15 +49,16 @@ und als Sticky Notes auf dem Spielfeld platziert.
 > 2. Gruppierung der Abhängigkeiten (10 Minuten)
 
 Die Gruppe steigt nun in eine erste Diskussion über die identifizierten Abhängigkeiten ein 
-und gruppiert gleiche Nennungen sowie inhaltliche zusammengehörige Elemente 
-(z.B. passendens Command oder Query zu einem System oder Akteur).
+und gruppiert gleiche Nennungen sowie inhaltliche zusammengehörige Elemente. Dabei erfolgt
+eine Zuordnung der Abhängigkeiten auf die aus dem Bounded Context Game 
+bekannten Commands, Query udn Events.
 
-Identifizierte Abhängigkeiten zwischen Bounded Contexts können optional durch eine 
-Verbindungslinie auf dem Spielfeld visualisiert werden.
+Abhängigkeiten zwischen Bounded Contexts können durch eine 
+Verbindungslinie auf dem Spielfeld zwischen den Bounded Context Canvas visualisiert werden.
 
-> 3. Diskussion und Karten legen (15 Minuten)
+> 3. Karten legen und entscheiden (20 Minuten)
 
-Im nächsten Schritt wird jede Abhängigkeit im Team mit einer Timebox von 15 Minuten 
+Im nächsten Schritt wird jede Abhängigkeit im Team mit einer Timebox von 20 Minuten 
 diskutiert. Hierbei hat jede Spieler/in die Möglichkeit, ihre Ansicht zu teilen, 
 andere Ansichten aufzunehmen und in den Austausch über die dargestellten Sachverhalte 
 zu gehen.
@@ -66,8 +67,6 @@ Anschließend legt jede Spieler/in seine Karte und teil somit seine Ansicht übe
 Beziehungsdefinition zwischen zwei Bounded Contexts. Eine Abhängigkeit definiert 
 zu durch das Legen der **Rollenkarte** (Up- und Downstream) und der **Musterkarte** 
 (Context Mapping Pattern je Rolle).
-
-> 4. Entscheidungsfindung (15 Minuten)
 
 Wenn sich eine gemeinsame Basis mit Ausreißern aufzeigt, kann die Entscheidungsfindung 
 durch die Erklärung der Ausreißer gestartet werden. Wenn das Ergebnis sehr unterschiedlich
@@ -80,6 +79,15 @@ definiert, wenn die gelegten Karten eine valide und widerspruchsfreie Abbildung
 * Rollendefinition mittels Rollenkarten abbilden _und_
 * alle Spieler/innen über diese Definition der Beziehungsdefinition übereinstimmen.
 
-> Visueller Spielablauf
+> Spielablauf
 
 ![Spielablauf Context Mapping Game](../img/cmg-gameplay.png)
+
+# Miroboard und Spielfeld
+
+Ein Beispiel für ein Miroboard zur Durchführung des Context Mapping Game
+findet sich unter folgendem Link: [Context Mapping Game Miroboard]()
+
+> Spielfeld Context Mapping Game
+
+![Spielfeld Context Mapping Game](../img/cmg-playground.png)

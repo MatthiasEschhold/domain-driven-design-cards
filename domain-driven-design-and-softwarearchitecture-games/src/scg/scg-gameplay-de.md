@@ -32,7 +32,7 @@ Das Spiel beginnt mit der Auswahl dem ersten Bewertungsobjekt (Subdomäne oder B
 Dies entspricht der Auswahl der ersten Mission. Für dieses Bewertungsobjekt wird das 
 dargestellte Bewertungsschema ausgefüllt.
 
-![Bewertungsschema für eine Subdomäne (oder Bounded Context)](../img/evaluation-scheme-with-example.png)
+![Bewertungsschema für eine Subdomäne / Bounded Context](../img/evaluation-scheme-with-example.png)
 
 In den ersten 15 Minuten erhalten die Spieler/innen die Möglichkeit sich Gedanken zu machen 
 oder auch bilateral sich mit anderen Spieler/innen auszutauschen. Die Karten des 
@@ -70,8 +70,17 @@ und der Austausch in der Gruppe entsteht erneut. Abschließend muss in der Grupp
 klare Entscheidung herbeigeführt werden. Diese wird festgehalten, durch Markierung im 
 Handlungsstrategieschema.
 
-![Handlungsstrategieschema für eine Subdomäne (oder Bounded Context)](../img/strategy-options-scheme.png)
+![Handlungsstrategieschema für eine Subdomäne / Bounded Context](../img/strategy-options-scheme.png)
 
 > Visueller Spielablauf
 
 ![Spielablauf Strategic Classification Game](../img/scg-gameplay.png)
+
+# Miroboard und Spielfeld
+
+Ein Beispiel für ein Miroboard zur Durchführung des Strategic Classification Game
+findet sich unter folgendem Link: [Strategic Classification Game Miroboard]()
+
+> Spielfeld Strategic Classification Game
+
+![Spielfeld Strategic Classification Game](../img/scg-playground.png)

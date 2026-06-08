@@ -21,15 +21,15 @@ Heuristiken für Bounded Context Schnitte sind:
 
 ### Die Mission
 
-Einen Bounded Context zu identifizieren und in einem Mindestumfang zu beschreiben, 
+Einen Bounded Context zu identifizieren und in seinem Mindestumfang zu beschreiben, 
 stellt eine Mission für das Team dar. Die Mission ist erfüllt, wenn der Bounded Context 
-im Mindestumfang anhand des [Bounded Context Canvas](https://github.com/ddd-crew/bounded-context-canvas) 
+anhand des [Bounded Context Canvas](https://github.com/ddd-crew/bounded-context-canvas) 
 der [DDD-Crew](https://github.com/ddd-crew) beschrieben ist. 
 
 Zum Mindestumfang gehört:
 * Zweck, Verantwortlichkeiten, Existenzbegründung
 * Angewendete Heuristiken für den Schnitt 
-* Wichtigste Geschäftsereignisse und Domänenobjekte
+* Wichtigste Domänenereignisse, -regeln und -objekte
 
 Das Spiel besteht aus mehreren Missionen und ist zu Ende, wenn alle Bounded Contexts
 einer Business-Domäne oder Subdomäne definiert sind.
@@ -51,7 +51,7 @@ Aus unserer Erfahrung passende Visualisierung von Domänenwissen finden sich in
 
 Metaphorisch oder auch physisch stellen diese Modelle das Spielfeld des Bounded Context Game dar.
 
-## Spielverlauf
+## Spielablauf
 
 > 1 Wissen teilen (30 bis 90 Minuten)
 
@@ -84,6 +84,15 @@ legen der Karten.
 Das Spiel ist beendet, wenn alle auf dem Spielfeld dargestellten Fähigkeiten und Funktionen 
 in einem Bounded Context verortet sind und jeder Bounded Context beschrieben ist.
 
-> Visueller Spielablauf
+> Spielablauf
 
 ![Spielablauf Bounded Context Game](../img/bcg-gameplay.png)
+
+# Miroboard und Spielfeld
+
+Ein Beispiel für ein Miroboard zur Durchführung des Bounded Context Game
+findet sich unter folgendem Link: [Bounded Context Game Miroboard]()
+
+> Spielfeld Bounded Context Game
+
+![Spielfeld Bounded Context Game](../img/bcg-playground.png)

@@ -7,9 +7,9 @@
 ## Ziel des Spiels
 
 Das Tactical Architecture Game - Starting Architecture Decisions hat das Ziel, 
-grundlegende Architekturentscheidungen zu diskutieren und eine Teamentscheidung im Konsent für jede 
-relevante Fragestellung zu finden. Hierfür stellt das Spiel ein Set an Entscheidungen, die Starting Architecture Decisions, eingeteilt in 
-Entscheidungskategorien, bereit.
+grundlegende Architekturentscheidungen zu diskutieren und eine Teamentscheidung im Konsent für relevante Fragestellungen
+zu finden. Hierfür stellt das Spiel ein Set an Entscheidungen eingeteilt in Entscheidungskategorien bereit. Die Entscheidungen
+sind so ausgewählt, dass sie eine solide Grundlage für den Start in ein Greenfield- oder Refactoring-Projekt bieten.
 
 ### Die Mission
 
@@ -22,10 +22,6 @@ zu Ende.
 Zur Spielvorbereitung gehört die Vorbereitung des Spielfelds in physischer oder digitaler Form.
 Weiter benötigt jede Spieler:in ein Kartendeck.
 
-### Miro Board
-
-Coming soon...
-
 ## Spielverlauf
 
 Das Spiel führt die Spieler:innen entlang der Entscheidungskategorien. Für jede Entscheidung startet ein 
@@ -33,7 +29,7 @@ Entscheidungsfindungsprozess zwischen den Spieler:innen. Die Abhängigkeit einer
 sind ebenfalls durch den Spielverlauf berücksichtigt. 
 
 Die Entscheidungskategorien werden entsprechend der beschriebenen Reihenfolge für domänenzentrierte oder
-vertikal geschichtete Architekturmuster werden beschriebenen folgenden Reihenfolge durchlaufen:
+vertikal geschichtete Architekturmuster durchlaufen.
 
 Die Bestandteile des Entscheidungsfindungsprozesses einer taktischen Architekturentscheidung sind:
 * Austausch über Fragestellung und Lösungsstrategie zur Förderung eines gemeinsamen Verständnisses
@@ -42,10 +38,22 @@ Anwendungsfälle und Qualitätsanforderungen
 * Formulierung von Entscheidungsalternativen
 * Finden einer Konsententscheidung im Team
 
+Der Entscheidungsfindungsprozess wird durch die Karten und des Vorgang des Kartenlegens unterstützt.
+
 Jede Entscheidung muss innerhalb einer Timebox von 45 Minuten gefunden werden. Von dieser Timebox 
-sind mindestens 15 Minuten für die Dokumentation der Architekturentscheidungen, insbesondere hinsichtlich 
-verworfener Alternativen sowie Konsequenzen der Entscheidung.
+sind mindestens 15 Minuten für die Dokumentation der Architekturentscheidungen gedacht.
 
-> Spielfeld
+## Spielvariante für domänenzentrierte Architekturmuster
 
-![Spielfeld Tactical Architecture Game](../../img/tag-playground.png)
+Ein Beispiel für ein Miroboard zur Durchführung des Tactical Architecture Game - Starting Architecture Decisions
+für domänenzentrierte Architekturmuster findet sich unter folgendem Link: [Tactical Architecture Game DOAP Miroboard]().
+
+Die Varianten-Beschreibung befindet sich im Kapitel [Tactical Architecture Game Starting Architecture Decisions für domänenzentrierte Architekturmuster](./tactical-architecture-decisions-domaincentric-de.md).
+
+> Spielfeld Tactical Architecture Game - Starting Architecture Decisions für domänenzentrierte Architekturmuster
+
+![Spielfeld Tactical Architecture Game DOAP](../img/tag-doap-ca-playgorund.png)
+
+## Spielvariante für vertikal geschichtete Architekturmuster
+
+WIP
